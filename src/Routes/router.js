@@ -13,6 +13,7 @@ import { Settings } from "../pages/Settings";
 import { Support } from "../pages/Support";
 import { Users } from "../pages/Users";
 import Questionary from '../pages/Questionary';
+import CreateQuestionary from "../pages/CreateQuestionary";
 import { Layout } from "../layouts";
 import { ControlRoles } from "../pages/ControlRole";
 import { AddRole } from "../pages/AddRole";
@@ -36,6 +37,7 @@ const AppRoutes = () => {
         { path: 'logs', element: <Logs /> },
         { path: 'privacyPolicy', element: <PrivacyPolicy /> },
         { path: 'questionary', element: <Questionary /> },
+        { path: 'create-questionary', element: <CreateQuestionary /> },
         { path: 'settings', element: <Settings /> },
         { path: 'support', element: <Support /> },
         { path: '/editUser', element: <EditUser /> },

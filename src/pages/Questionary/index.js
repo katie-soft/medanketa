@@ -23,10 +23,10 @@ const isMob=useWindowResize().width<1024
       titleText="Анкеты"
       description="Создавайте ваши персональные анкеты, и распространяйте среди пользователей."
       buttonText="Создать анкету"
-      // onButtonClick={handleCreatePage}
+      path='/create-questionary'
     >
     <div className='questionary-links'>
-        <Link to="questionary" className='active'>Анкеты</Link>
+      <Link to="questionary" className='active'>Анкеты</Link>
       <Link>Шаблоны</Link>
       <Link to="directories">Справочники</Link>
     </div>

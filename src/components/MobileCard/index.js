@@ -106,7 +106,7 @@ const MobileCard = ({
         </IconWrapperUI>
       )}
       {remove && (
-        <IconWrapperUI bgColor="none"     classN="close-icon">
+        <IconWrapperUI bgColor="none" classN="close-icon">
           <CloseIcon />
         </IconWrapperUI>
       )}

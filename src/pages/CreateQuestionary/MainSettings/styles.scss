@@ -1,0 +1,18 @@
+.settings-cards-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 42px;
+  margin-bottom: 50px;
+
+  > div:first-of-type {
+    width: 60%;
+  }
+
+  .card-ui-wrapper {
+    max-width: unset;
+  }
+}
+
+textarea::placeholder {
+  color: #C3C3C3;
+}

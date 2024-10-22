@@ -9,16 +9,11 @@ import { IconWrapperUI } from '../IconWrapperUI';
 import {  RefProvider } from '../../Context/refHeight';
  
 const TabsContainer = ({ 
-  titleText, 
-  description, 
   tabs, 
   activeIndex, 
   handleClick, 
   renderContent, 
-  cardHeight = 'auto', 
-  backWard = false, 
-  children ,
-  active
+  cardHeight = 'auto'
 }) => {
   
   const ref = useRef();

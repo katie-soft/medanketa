@@ -11,7 +11,7 @@ $disabled-color: #d3d3d3;
   align-items: center;
   justify-content: center;
   font-family: "Gilroy", sans-serif;
-  cursor: pointer;
+  transition: all 0.3s;
 
   &.primary {
     background-color: $primary-color;
@@ -26,6 +26,17 @@ $disabled-color: #d3d3d3;
   &.disabled {
     background-color: $disabled-color;
     cursor: not-allowed;
+  }
+
+  &.transparent {
+    background-color: transparent;
+    border: 1px solid #E4E4E4;
+    border-radius: 50px;
+    min-width: 34px;
+
+    &:hover {
+      background-color: #E4E4E4;
+    }
   }
 
   .button-icon {

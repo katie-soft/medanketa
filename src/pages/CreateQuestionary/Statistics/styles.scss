@@ -1,0 +1,18 @@
+.stat-cards {
+  display: flex;
+  gap: 27px;
+  margin-bottom: 58px;
+
+  .card-wrapper-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat-number {
+    color: #1C597B;
+    font-size: 100px;
+    font-weight: 900;
+  }
+}
+
