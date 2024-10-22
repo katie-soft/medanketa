@@ -1,0 +1,12 @@
+<svg>
+  <filter id="round-lg">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="12" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo" />
+    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+  </filter>
+  <filter id="round-sm">
+    <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 19 -9" result="goo" />
+    <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+  </filter>
+</svg>

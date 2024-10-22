@@ -1,0 +1,56 @@
+$border-color: #c4c6c7;
+$error-color: #dc3545;
+
+.input-group {
+  label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    outline: none;
+    transition: 0.3s border-color;
+    .visited {
+      border: 1px solid $border-color;
+    }
+    &::placeholder {
+      color: #c4c6c7;
+    }
+
+    &.input-error {
+      border-color: $error-color;
+    }
+    &:active,
+    &:focus-visible,
+    &:focus {
+      border: 1px solid $border-color;
+      color: #303030;
+      outline: none;
+      &::placeholder {
+        color: #303030;
+      }
+    }
+  }
+
+  .error-message {
+    color: $error-color;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+}
+.visited {
+  border: 1px solid $border-color !important;
+  color: #303030 !important;
+  outline: none !important;
+  &::placeholder {
+    color: #303030 !important;
+  }
+}

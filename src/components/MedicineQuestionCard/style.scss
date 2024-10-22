@@ -1,0 +1,303 @@
+.directories-page thead th:first-child,
+thead td:first-child {
+  width: 50% !important;
+}
+.create-directory-page .create-page.button.primary {
+  width: fit-content;
+  padding: 15px 23px 15px 28px;
+  color: #303030;
+}
+
+.directories-page  .title-wrapper a .create-page.button.primary{
+  width: 203px;
+    background-color: #1C597B;
+  color: white;
+}
+.directory-content {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  // padding: 48.5px 23px 84.5px 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 46.5px;
+
+}
+.create-directory-page {
+  width: 100%;
+ 
+}
+.description-directory-content {
+  clip-path: polygon(
+    0% 7.606%,
+    0% 7.606%,
+    0.028% 6.392%,
+    0.108% 5.241%,
+    0.237% 4.168%,
+    0.409% 3.188%,
+    0.621% 2.316%,
+    0.869% 1.568%,
+    1.147% 0.96%,
+    1.451% 0.506%,
+    1.778% 0.223%,
+    2.122% 0.125%,
+    97.878% 0.125%,
+    97.878% 0.125%,
+    98.223% 0.223%,
+    98.549% 0.506%,
+    98.853% 0.96%,
+    99.131% 1.568%,
+    99.379% 2.316%,
+    99.591% 3.188%,
+    99.763% 4.168%,
+    99.892% 5.241%,
+    99.972% 6.392%,
+    100% 7.606%,
+    100% 77.182%,
+    100% 77.182%,
+    99.972% 78.396%,
+    99.892% 79.547%,
+    99.763% 80.62%,
+    99.591% 81.6%,
+    99.379% 82.472%,
+    99.131% 83.22%,
+    98.853% 83.828%,
+    98.549% 84.282%,
+    98.223% 84.565%,
+    97.878% 84.663%,
+    89.25% 84.663%,
+    89.25% 84.663%,
+    88.906% 84.761%,
+    88.58% 85.045%,
+    88.275% 85.498%,
+    87.997% 86.107%,
+    87.75% 86.855%,
+    87.538% 87.726%,
+    87.366% 88.707%,
+    87.237% 89.78%,
+    87.156% 90.931%,
+    87.129% 92.145%,
+    87.129% 92.394%,
+    87.129% 92.394%,
+    87.101% 93.608%,
+    87.021% 94.759%,
+    86.892% 95.832%,
+    86.719% 96.812%,
+    86.507% 97.684%,
+    86.26% 98.432%,
+    85.982% 99.04%,
+    85.678% 99.494%,
+    85.351% 99.777%,
+    85.007% 99.875%,
+    2.122% 99.875%,
+    2.122% 99.875%,
+    1.778% 99.777%,
+    1.451% 99.494%,
+    1.147% 99.04%,
+    0.869% 98.432%,
+    0.621% 97.684%,
+    0.409% 96.812%,
+    0.237% 95.832%,
+    0.108% 94.759%,
+    0.028% 93.608%,
+    0% 92.394%,
+    0% 7.606%
+  );
+  width: 100%;
+  height: auto;
+  background-color: #f0f4f6;
+  padding: 24px 24px 32px 24px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:wrap ;
+  row-gap: 10px;
+ 
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.41px;
+    color: #c3c3c3;
+    margin-left: 32px;
+   }
+.input-group input {
+  padding:16px 32px;
+  width: 437px;
+
+ 
+  &:last-child {
+    width: 441px;
+  }
+}
+  
+}
+.variant.wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: #D4DBDF;
+    padding : 12px 32px;
+    .icon-wrapper  {
+        background: none;
+    }
+    p{
+      color: #282727;  
+    }
+ }
+.variant-opt{
+    display: flex;
+    gap: 9px;
+    align-items: center;
+}
+.variants-of-option{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+        margin-bottom: 70px;
+        
+}
+ .input-group input{
+      border-radius: 30px;
+      font-weight: 500;
+font-size: 16px;
+color: #C3C3C3!important;
+line-height: 19.41px;
+  padding:16px 32px;
+   }
+  .count-of-visits{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      row-gap: 10px;
+  }
+  .medicine-questions{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 27px;
+      position: relative;
+      z-index: 1;
+      justify-content: space-between;
+      .card-ui-wrapper{
+clip-path: polygon( 0% 11.583%,0% 11.583%,0.119% 9.704%,0.463% 7.922%,1.015% 6.26%,1.754% 4.742%,2.663% 3.393%,3.722% 2.235%,4.913% 1.293%,6.217% 0.591%,7.616% 0.152%,9.091% 0%,80.224% 0%,80.224% 0%,81.33% 0.114%,82.379% 0.443%,83.357% 0.97%,84.251% 1.676%,85.045% 2.544%,85.727% 3.557%,86.281% 4.695%,86.695% 5.941%,86.953% 7.278%,87.042% 8.687%,87.042% 9.12%,87.042% 9.12%,87.127% 10.459%,87.372% 11.729%,87.765% 12.913%,88.292% 13.995%,88.94% 14.957%,89.695% 15.782%,90.544% 16.453%,91.473% 16.954%,92.47% 17.266%,93.521% 17.375%,93.521% 17.375%,94.572% 17.483%,95.569% 17.795%,96.499% 18.296%,97.348% 18.967%,98.102% 19.792%,98.75% 20.754%,99.277% 21.836%,99.67% 23.02%,99.915% 24.29%,100% 25.629%,100% 66.216%,100% 66.216%,99.881% 68.095%,99.537% 69.877%,98.985% 71.539%,98.246% 73.057%,97.337% 74.407%,96.278% 75.564%,95.087% 76.506%,93.783% 77.209%,92.384% 77.648%,90.909% 77.799%,86.506% 77.799%,86.506% 77.799%,85.093% 77.945%,83.753% 78.365%,82.503% 79.038%,81.361% 79.941%,80.346% 81.05%,79.475% 82.344%,78.767% 83.798%,78.238% 85.391%,77.908% 87.099%,77.794% 88.9%,77.794% 88.9%,77.68% 90.7%,77.35% 92.408%,76.822% 94.001%,76.113% 95.455%,75.243% 96.749%,74.227% 97.858%,73.086% 98.761%,71.836% 99.434%,70.495% 99.855%,69.082% 100%,9.091% 100%,9.091% 100%,7.616% 99.848%,6.217% 99.41%,4.913% 98.707%,3.722% 97.765%,2.663% 96.607%,1.754% 95.258%,1.015% 93.74%,0.463% 92.078%,0.119% 90.296%,0% 88.417%,0% 11.583% );
+          width: 330px;
+          background-color: #F0F4F6;
+          position: relative;
+      }
+  }
+
+  .medicine-questions-card{
+      position: relative;
+      width: fit-content;
+        .card-ui-wrapper{
+          color: #303030;
+          margin-left: unset;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19.41px;
+          justify-content: start;
+      }
+       .card-ui-wrapper p{
+          color: #303030;
+          margin-left: unset;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19.41px;
+      }
+      .custom-select{
+          width: 215px;
+          margin-top: auto;
+          .select-box{
+          background-color: unset;
+          border: none;
+     padding: unset;
+      font-weight: 500;
+          font-size: 16px;
+          line-height: 19.41px;
+          }
+      }
+  }
+  .namber-of-question{
+      display: flex;
+      gap: 54px;
+       p{
+      margin-left: unset!important;
+      }
+    
+  }
+   
+  .shadow {
+  position: absolute; /* Position the shadow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+      background-color: #FFFFFF99;
+  z-index: 1; /* Lower z-index for shadow */
+  transition: opacity 0.3s ease; /* Optional transition for shadow */
+  pointer-events: none;
+}
+
+.medicine-question-card.active .shadow {
+  opacity: 0.5; 
+}
+ .medicine-questions-card .edit-button{
+   
+     position: absolute;
+     bottom: 24px;
+     right: 24px;
+      
+      background-color: #F0F4F6;
+      @media screen and (max-width:1024px) {
+        width: 20px;
+        height: 20px;
+      }
+  }
+ .close-icon{
+           position: absolute;
+
+        right: 0;
+        top: 0;
+ 
+}
+.active-card {
+     .edit-button{
+     
+      svg path{
+          stroke: #1C597B;
+      
+      }}
+ 
+}
+.create-directory-page{
+    position: relative;
+   
+}
+.more-question{
+    display: flex;
+    background-color: unset;
+    border: none;
+    outline: none;
+    color: #898989;
+     font-weight: 500;
+          font-size: 16px;
+          line-height: 19.41px;
+         
+          margin: auto;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          gap: 3px;
+          cursor: pointer;
+}
+.description-directory-content-parent{
+  position: relative;
+   .save-btn.button.primary{
+    
+ @media screen and (max-width:1550px){
+           bottom: 22px;
+
+ }
+
+  }
+}

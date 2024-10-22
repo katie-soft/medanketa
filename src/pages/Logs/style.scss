@@ -1,0 +1,42 @@
+.logs-page thead th:first-child, thead td:first-child {
+    width: 90%!important;
+}
+.logs-page{
+  margin-bottom: 30px;
+}
+.logs-page table td:last-of-type{
+    border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding-right: 24px;
+  display: table-cell;
+  background-color:unset;
+}
+.logs-mob  .mobile-card{
+   @media screen and (max-width:440px) {
+    width: 100%;
+  }
+}
+ 
+ .mobile-card-content{
+  gap: 20px;
+ }
+ .mobile-card-content-name{
+   min-height: 55px;
+    
+ }
+  
+ .logs-mob .action-type{
+   display: flex;
+   align-items: flex-end;
+ }
+ .logs-mob  .title-mob-card{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+ }
+ .logs-mob .row-creator-icon{
+   top: -5px;
+ }
+ .logs-mob .title-2{
+   max-width: 107px;
+ }

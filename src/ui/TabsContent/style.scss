@@ -1,0 +1,239 @@
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  margin-bottom: 0px;
+}
+
+.navbar ul li {
+  display: inline;
+  list-style: none;
+  padding: 24px 32px;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24.26px;
+  color: #898989;
+  cursor: pointer;
+}
+
+.navbar ul li.active {
+  background: #fff;
+  color: #303030;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar ul li.active a {
+  color: #f0f4f6;
+}
+
+.navbar ul li b.left-curve,
+.left-curve-btn {
+  position: absolute;
+  bottom: 0px;
+  left: -20px;
+  height: 100%;
+  width: 20px;
+  background: #fff;
+  display: none;
+}
+
+.navbar ul li b.left-curve::before,
+.left-curve-btn::before {
+  content: "";
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-bottom-right-radius: 20px;
+  background: #f0f4f6;
+}
+
+.navbar ul li b.right-curve,
+.right-curve-btn {
+  position: absolute;
+  right: -20px;
+  top: 0px;
+  height: 100%;
+  width: 20px;
+  background: #fff;
+  display: none;
+}
+
+.navbar ul li b.right-curve::before,
+.right-curve-btn::before {
+  content: "";
+  right: 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  background: #f0f4f6;
+}
+
+.navbar ul li.active b.left-curve,
+.navbar ul li.active b.right-curve,
+.right-curve-btn,
+.left-curve-btn {
+  display: block;
+}
+.right-curve-btn,
+.left-curve-btn {
+  height: 20px;
+  background-color: red;
+  right: unset;
+  top: unset;
+  left: unset;
+  bottom: unset;
+}
+.content-wrapper {
+  background-color: white;
+  position: relative;
+}
+.tab-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    padding-top: 4.5px;
+    gap: 27px;
+  }
+}
+.maintance-mod-activation.rounded-wrapper {
+  justify-content: space-between;
+  width: 33%;
+  padding: 12px 23px 12px 31px;
+  border-color: #f0f4f6;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 1356px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  h2 {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21.83px;
+    color: #303030;
+    @media screen and (max-width: 1024px) {
+      font-size: 1rem;
+      line-height: 19.41px;
+    }
+  }
+  // @media screen and (max-width:1024px) {
+  //      max-width: 400px;
+  // width: 100%;
+  // margin: auto;
+  // }
+}
+.save-btn {
+  display: inline;
+  list-style: none;
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 30px;
+  position: relative;
+  font-weight: 500;
+  line-height: 24.26px;
+  color: #898989;
+
+  height: 49px;
+  width: 167px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @media screen and (max-width: 1024px) {
+    left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.card {
+  width: 100%;
+  background-color: white;
+  position: relative;
+  border-radius: 30px;
+  padding: 32px;
+  @media screen and (max-width: 1024px) {
+    padding: 12px 12px 24px 12px;
+  }
+}
+
+.tabs-container {
+  position: relative;
+  height: fit-content;
+}
+.explanation-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #999999;
+  @media screen and (max-width: 1024px) {
+    font-size: 14px !important;
+    line-height: 16.8px !important;
+    width: 96%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 24px;
+  }
+}
+.tabs-title {
+  display: flex;
+  justify-content: space-between;
+  row-gap: 10px;
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+    // margin-bottom: 42px;
+    flex-wrap: wrap;
+  }
+}
+.btn-parent {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+
+.prev-btn-slider {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  z-index: 2;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+}
+.next-btn-slider {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  z-index: 2;
+  width: 31px;
+  height: 31px;
+
+  svg {
+    transform: rotate(180deg);
+  }
+}
+.bg-for-round {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  width: 40px;
+  height: 40px;
+}

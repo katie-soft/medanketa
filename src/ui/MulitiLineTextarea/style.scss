@@ -1,0 +1,36 @@
+.textarea-container {
+  position: relative;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  height: 100px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+  padding: 16px 32px;
+  @media screen and (max-width: 1024px) {
+    padding: 12px 24px;
+  }
+  .visited {
+    border: 1px solid #c4c6c7;
+  }
+}
+
+.custom-placeholder {
+  position: absolute;
+  top: 12px;
+  left: 32px;
+  color: #303030;
+  pointer-events: none;
+  white-space: pre-line;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+}
+
+.custom-placeholder span {
+  display: block;
+}

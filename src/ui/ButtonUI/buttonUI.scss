@@ -1,0 +1,34 @@
+$primary-color: #1c597b;
+$secondary-color: #6c757d;
+$disabled-color: #d3d3d3;
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gilroy", sans-serif;
+  cursor: pointer;
+
+  &.primary {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  &.secondary {
+    background-color: $secondary-color;
+    color: white;
+  }
+
+  &.disabled {
+    background-color: $disabled-color;
+    cursor: not-allowed;
+  }
+
+  .button-icon {
+    margin-right: 8px;
+  }
+}

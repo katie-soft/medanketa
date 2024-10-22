@@ -1,0 +1,154 @@
+.card-ui-wrapper .card-wrapper-content .toggle-answer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 43px;
+  margin-left: 0;
+}
+
+.add-role-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  height: 100%;
+
+  @media screen and (max-width: 720px) {
+    .toggle-button-ui {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 95%;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .explanation-text {
+      margin-bottom: 80px;
+    }
+    .tab-content {
+      align-items: center;
+    }
+  }
+}
+.add-role-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+    .toggle-button-ui {
+      width: 100%;
+    }
+  }
+}
+
+.card-ui-wrapper {
+  max-width: 447px; /* Optional: limit max width */
+  box-sizing: border-box;
+  width: 100%;
+}
+.seo-cards .card-ui-wrapper:nth-child(2) .wrapper {
+  height: auto;
+}
+
+.seo-cards .card-ui-wrapper:last-child {
+  flex: 1 1 100%; /* Last item takes the full width */
+}
+.tab-content {
+  width: 100%;
+
+  // background-color: white;
+  position: relative;
+  // padding: 1.98vw 1.67vw 1.82vw 1.30vw;
+}
+.add-role-container .save-btn {
+  bottom: 0;
+  right: 0;
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    bottom: 2%;
+  }
+}
+.create-page.button.primary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22.41px;
+  color: #1c597b;
+  border: 1px solid #e4e4e4;
+  border-radius: 50px;
+  background-color: #f0f4f6;
+  width: 113px;
+  gap: 13px;
+}
+
+.title-3 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21.83px;
+}
+
+.add-role-cards .input-group {
+  margin-bottom: unset;
+  input {
+    border-radius: 30px;
+    font-weight: 500;
+    font-family: Gilroy;
+    font-size: 16px;
+    color: #c4c6c7;
+
+    line-height: 19.41px;
+    background-color: white;
+    padding: 15px 0 15px 28px;
+    &::placeholder {
+      line-height: 19.41px;
+      font-weight: 500;
+      font-family: Gilroy;
+      font-size: 16px;
+      color: #c4c6c7;
+    }
+    &:active,
+    &:focus-visible,
+    &:focus {
+      border: 1px solid #c4c6c7;
+      color: #303030;
+      outline: none;
+      &::placeholder {
+        color: #303030;
+      }
+    }
+  }
+}
+
+input:-webkit-autofill {
+  background-color: white !important;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #c4c6c7 !important;
+  line-height: 19.41px;
+  font-weight: 500;
+  font-family: Gilroy;
+  font-size: 16px;
+  color: #c4c6c7;
+}
+
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-color: white !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+.send-new-pass {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.98px;
+  color: #303030;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.add-role-container .tab-content svg {
+  right: unset;
+  position: unset;
+}

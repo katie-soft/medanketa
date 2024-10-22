@@ -1,0 +1,112 @@
+.create-page-container .switch-text {
+  width: unset !important;
+}
+.create-page-container .tab-content {
+  margin-bottom: 24px;
+}
+.seo-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: space-between;
+  }
+  .input-group {
+    input {
+      opacity: 1;
+      font-weight: 500;
+      line-height: 19.41px;
+      font-size: 16px;
+      color: #303030;
+    }
+  }
+}
+
+.card-ui-wrapper {
+  max-width: 329px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.seo-cards .card-ui-wrapper:nth-child(2) .wrapper {
+  height: auto;
+}
+
+.seo-cards .card-ui-wrapper:last-child {
+  flex: 1 1 100%;
+}
+.toggle-anwser {
+  display: flex;
+  margin-left: 0;
+  gap: 43px;
+  flex-wrap: wrap;
+}
+
+.backward-btn.button.primary,
+.save-as-draft.button.primary {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+  color: #1c597b;
+  border: 1px solid #e4e4e4;
+  border-radius: 50px;
+  background-color: #f0f4f6;
+  height: 49px;
+  white-space: nowrap;
+}
+.save-as-draft.button.primary {
+  background-color: #ffffff;
+}
+.btn-container.card-ui-wrapper {
+  flex: unset;
+  max-width: unset;
+  height: auto;
+  flex-wrap: wrap;
+  @media screen and (max-width: 1024px) {
+    max-width: 447px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .create-page-container {
+    .tab-content .custom-select {
+      width: 33.9%;
+
+      max-width: 600px;
+      margin: auto;
+      width: 100%;
+    }
+  }
+}
+
+textarea {
+  font-family: Gilroy;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+  color: #c4c6c7;
+  padding: 16px 32px;
+  background-color: #ffffff;
+  resize: none;
+  border: none;
+  border-radius: 30px;
+  height: 119px;
+  .visited {
+    border: 1px solid #c4c6c7;
+  }
+  &:active,
+  &:focus-visible,
+  &:focus {
+    border: 1px solid #c4c6c7;
+    color: #303030;
+    outline: none;
+    &::placeholder {
+      color: #303030;
+    }
+  }
+}
+.create-page-container .btn-parent {
+  @media screen and (max-width: 1024px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

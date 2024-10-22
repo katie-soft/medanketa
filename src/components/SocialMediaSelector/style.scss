@@ -1,0 +1,55 @@
+.social-media-choose{
+    display: flex;
+    gap: 14px;
+@media screen and (max-width:440px) {
+  flex-direction: column;
+}
+   .soc-med-profile{
+       display: flex;
+       gap: 11px;
+       flex-direction: column;
+       .custom-select{
+     width: 119px;
+     .select-box{
+padding: 6.5px 21px;
+justify-content: center;
+border: none;
+.icon{
+  margin-right: unset;
+}
+     }
+       }
+   }
+}
+.tabs-cart .input-group input {
+  padding:16px 32px;
+ 
+}
+.social-media-choose .icon-wrapper{
+    background-color: unset;
+    height: 49px;
+    width: 49px;
+    min-width: 49px;
+    min-height: 49px;
+    align-self: flex-end;
+    @media screen and (max-width:440px){
+      position: absolute;
+    }
+}
+.add-social-media-block{
+    border-radius: 30px;
+    background-color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+ color: #1C597B;
+ padding: 15px 22px 15px 25px;
+ border: none;
+ outline: none;
+ align-self: flex-start;
+}
+.social-media-content{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}

@@ -1,0 +1,394 @@
+.directories-page thead th:first-child,
+thead td:first-child {
+  width: 50% !important;
+}
+.create-directory-page .create-page.button.primary {
+  width: fit-content;
+  padding: 15px 23px 15px 28px;
+  color: #303030;
+}
+.directories-page {
+  margin-bottom: 37px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: unset;
+  }
+  .list-pages p {
+    color: #282727;
+  }
+  .title-wrapper a .create-page.button.primary {
+    width: 203px;
+    background-color: #1c597b;
+    color: white;
+    @media screen and (max-width: 1024px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 90vw;
+    }
+  }
+}
+.directory-content {
+  width: 100%;
+  height: 100%;
+  // background-color: white;
+  // padding: 48.5px 23px 84.5px 28px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 46.5px;
+  @media screen and (max-width: 1024px) {
+    clip-path: none;
+    background-color: unset;
+    //  padding: 19px 7px 20px 7px;
+    gap: 30px;
+  }
+  .mobile-card-content {
+    gap: 26px;
+  }
+}
+
+.description-directory-content {
+  width: 100%;
+  height: auto;
+  background-color: #f0f4f6;
+  padding: 24px 24px 32px 24px;
+  position: relative;
+  display: flex;
+  row-gap: 10px;
+  column-gap: 27px;
+  border-radius: 30px;
+  @media screen and (max-width: 1850px) {
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px 9px 100px 9px;
+    gap: 26px;
+    margin-bottom: 55px;
+    .toggle-button-ui {
+      position: absolute;
+      bottom: 13%;
+      width: 100%;
+    }
+  }
+  .title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.41px;
+    color: #c3c3c3;
+    margin-left: 32px;
+    margin-bottom: 10px;
+  }
+  .input-group input {
+    padding: 16px 32px;
+    width: 437px;
+
+    &:last-child {
+      width: 441px;
+      color: #303030 !important;
+
+      @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding: 14px 49px 13px 21px;
+      }
+    }
+  }
+}
+.variant.wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d4dbdf;
+  padding: 12px 32px;
+
+  .icon-wrapper {
+    background: none;
+    width: unset;
+    height: unset;
+  }
+  p {
+    color: #282727;
+  }
+}
+.variant-opt {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.variants-of-option {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-bottom: 70px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    gap: 16px;
+    margin-bottom: 50px;
+    .variant {
+      width: 100%;
+    }
+  }
+}
+.input-group input {
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+  padding: 16px 32px;
+  @media screen and (max-width: 1024px) {
+    padding: 12px 24px;
+  }
+}
+.count-of-visits {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 8px;
+  z-index: 2;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    .visits-content {
+      width: 100%;
+    }
+  }
+}
+.medicine-questions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px;
+  position: relative;
+  z-index: 1;
+
+  @media screen and (max-width: 1024px) {
+    justify-content: center;
+  }
+  .card-ui-wrapper {
+    .wrapper {
+      padding: unset;
+    }
+    width: 330px;
+    background-color: #f0f4f6;
+
+    position: relative;
+    @media screen and (max-width: 1024px) {
+      max-width: 450px;
+      width: 100%;
+      padding: 16px 24px 16.5px 26.5px;
+      height: 100%;
+      gap: 17px;
+
+      .wrapper {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}
+
+.medicine-questions-card {
+  position: relative;
+  width: fit-content;
+  .card-ui-wrapper {
+    color: #303030;
+    margin-left: unset;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.41px;
+    justify-content: start;
+  }
+  .card-ui-wrapper p {
+    color: #303030;
+    margin-left: unset;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.41px;
+  }
+  .custom-select {
+    width: 215px;
+    margin-top: auto;
+    .select-box {
+      background-color: unset;
+      border: none;
+      padding: unset;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19.41px;
+    }
+  }
+}
+.namber-of-question {
+  display: flex;
+  gap: 54px;
+  p {
+    margin-left: unset !important;
+    color: #898989 !important;
+  }
+}
+
+.shadow {
+  position: absolute; /* Position the shadow */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff99;
+  z-index: 1; /* Lower z-index for shadow */
+  transition: opacity 0.3s ease; /* Optional transition for shadow */
+  pointer-events: none;
+}
+
+.medicine-question-card.active .shadow {
+  opacity: 0.5; /* Change opacity or any effect when active */
+}
+.medicine-questions-card .edit-button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+
+  background-color: #f0f4f6;
+  @media screen and (max-width: 1024px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+.close-icon {
+  position: absolute;
+
+  right: 12px;
+  top: 12px;
+  width: 32px;
+  height: 32px;
+}
+.active-card {
+  .edit-button {
+    svg path {
+      stroke: #1c597b;
+    }
+  }
+}
+.create-directory-page {
+  margin-bottom: 38px;
+  @media screen and (max-width: 1024px) {
+    margin-bottom: unset;
+  }
+  .card {
+    .card {
+      padding: 48.5px 23px 84.5px 28px;
+    }
+  }
+
+  position: relative;
+}
+.more-question {
+  display: flex;
+  background-color: unset;
+  border: none;
+  outline: none;
+  color: #898989;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19.41px;
+
+  margin: auto;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+}
+.description-directory-content-parent {
+  position: relative;
+  .switch-text {
+    width: unset;
+  }
+  .list-pages p {
+    color: #282727;
+  }
+  .save-btn.button.primary {
+    position: absolute;
+    bottom: 0;
+    right: 24px;
+    z-index: 2;
+    margin-bottom: 32px;
+    @media screen and (max-width: 1024px) {
+      bottom: 5%;
+    }
+  }
+  .variants-of-option .input-group {
+    max-width: 437px;
+  }
+}
+.directories-mob-page .mobile-card {
+  .mobile-card-content {
+    gap: 24px;
+  }
+}
+.choose-variant-block {
+  margin-bottom: 4px;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+    z-index: 2;
+  }
+}
+.choose-answer {
+  width: 100%;
+  z-index: 2;
+  .variant {
+    width: unset;
+  }
+  .title {
+    margin-left: unset;
+  }
+  @media screen and (max-width: 1024px) {
+    .title {
+      margin-left: 32px;
+    }
+  }
+}
+
+.choose-opt {
+  width: 441px;
+  outline: none;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+  &::placeholder {
+    color: #c4c6c7;
+  }
+}
+.directory-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.medicine-card-question {
+  width: 100%;
+  display: flex;
+  background-color: unset !important;
+
+  textarea {
+    width: 100%;
+    margin: 0;
+    padding: 16px 32px;
+
+    box-sizing: border-box;
+    .visited {
+      border: 1px solid #c4c6c7;
+    }
+    &:active,
+    &:focus-visible,
+    &:focus {
+      border: 1px solid #c4c6c7;
+      color: #303030;
+      outline: none;
+      &::placeholder {
+        color: #303030;
+      }
+    }
+  }
+}
+.input-group .write-new-option {
+  background: transparent;
+  border: 1px solid #c4c6c7;
+  color: #303030;
+  outline: none;
+}

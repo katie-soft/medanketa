@@ -1,0 +1,122 @@
+.mobile-card {
+  h3 {
+    color: #999999;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 22px;
+    width: 107px;
+  }
+  .toggle-button-ui {
+    justify-content: flex-start;
+  }
+}
+.mobile-card-container {
+  padding: 24px;
+  border-radius: 30px;
+  background-color: #f0f4f6;
+  width: 100%;
+  position: relative;
+  .close-icon {
+    top: 12px;
+    right: 12px;
+  }
+}
+.list-page-mobile .close-icon {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  svg {
+    path {
+      stroke: #c0c0c0;
+    }
+  }
+}
+.mb-edit.edit-button {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+}
+
+.title-mob-card {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 30px;
+  h2,
+  .role-mob-card .title-2 {
+    color: #303030;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: 22px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 107px;
+    white-space: normal;
+    @media screen and (max-width: 1024px) {
+      max-width: unset;
+    }
+  }
+}
+.mobile-card .date-mob-card p,
+.mobile-card span,
+.mobile-card .mob-card-status {
+  line-height: 22px;
+  color: #999999;
+  font-weight: 500;
+  font-size: 1em;
+}
+.mob-card-status {
+  margin-bottom: 9px;
+}
+.list-page-mobile {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 27px 14px;
+  background-color: white;
+  padding: 27px 13px 38px 13px;
+  border-radius: 30px;
+  @media screen and (max-width: 1024px) {
+    padding: 12px 12px 24px 12px;
+  }
+  @media screen and (max-width: 449px) {
+    gap: 27px 7px;
+    justify-content: space-between;
+  }
+  @media screen and (max-width: 400px) {
+    justify-content: center;
+  }
+}
+.mobile-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.table-wrapper {
+  padding: unset;
+}
+.creator-block {
+  color: #999999;
+}
+
+.role-mob-card .title-2 {
+  color: #303030;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 22px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 107px;
+  white-space: normal;
+  @media screen and (max-width: 1024px) {
+    max-width: unset;
+  }
+}

@@ -1,0 +1,30 @@
+.input-wrapper .custom-file-input {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  outline: none;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.36px;
+  padding: 16px 32px;
+  margin-left: unset;
+  display: flex;
+  align-items: center;
+  color: #333333;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+
+  span {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    svg {
+      path {
+        stroke: #333333;
+      }
+      width: 14.25px;
+      height: 14.83px;
+    }
+  }
+}
