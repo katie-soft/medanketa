@@ -1,8 +1,8 @@
-.main-wrapper{
-    display: flex;
-    gap: 24px;
-    margin-bottom: 72px;
-    @media screen and (max-width:1024px){
+.main-wrapper {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
-    }
+  }
 }

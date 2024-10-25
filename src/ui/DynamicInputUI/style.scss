@@ -1,4 +1,4 @@
-$border-color: #C4C6C7;
+$border-color: #c4c6c7;
 
 .input-container {
   position: relative;
@@ -21,14 +21,14 @@ $border-color: #C4C6C7;
   overflow: hidden;
   text-overflow: ellipsis;
   z-index: 2;
- }
+}
 
 .base-text {
-  color: #C4C6C7;
+  color: #c4c6c7;
 }
 
 .user-text {
-  color: #303030; 
+  color: #303030;
 }
 
 .transparent-input {
@@ -42,20 +42,19 @@ $border-color: #C4C6C7;
   font-size: 16px;
   line-height: 19.41px;
   padding: 16px 32px 16px 40px;
-  color: transparent; 
+  color: transparent;
   caret-color: black;
   outline: none;
   box-sizing: border-box;
   z-index: 1;
-    border: 1px solid transparent; 
-
+  border: 1px solid transparent;
 }
 
 .transparent-input:focus {
-  border: 1px solid #C4C6C7; 
-  outline:none;
+  border: 1px solid #c4c6c7;
+  outline: none;
 }
 
 .transparent-input::placeholder {
-  color: transparent; 
+  color: transparent;
 }

@@ -1,7 +1,7 @@
 .checkbox-container {
-  background-color: #f0f4f6;  
-  padding: 14px 26px 14px 14px;  
-  border-radius: 30px; 
+  background-color: #f0f4f6;
+  padding: 14px 26px 14px 14px;
+  border-radius: 30px;
   display: inline-flex;
   align-items: center;
 }
@@ -27,18 +27,20 @@
     height: 12px;
     border: 1px solid #1c597b;
     border-radius: 2px;
-    transition: background-color 0.3s, border-color 0.3s;
+    transition:
+      background-color 0.3s,
+      border-color 0.3s;
 
     &.checked {
-      background-color: #1c597b;  
-      border-color: #1c597b; 
+      background-color: #1c597b;
+      border-color: #1c597b;
     }
   }
 
   .checkbox-label {
-    font-weight: 500;  
-    font-size: 16px;  
-    line-height: 22px;  
-    color: #303030;  
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #303030;
   }
 }

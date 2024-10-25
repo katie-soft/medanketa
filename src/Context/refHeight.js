@@ -1,16 +1,12 @@
-import React from "react";
-import { createContext, useState } from "react";
+import React from 'react'
+import { createContext, useState } from 'react'
 
 export const RefContext = createContext({
   addBlock: false,
-  setAddBlock: () => {},
-});
+  setAddBlock: () => {}
+})
 
 export const RefProvider = ({ children }) => {
-  const [addBlock, setAddBlock] = useState(false);
-  return (
-    <RefContext.Provider value={{ addBlock, setAddBlock }}>
-      {children}
-    </RefContext.Provider>
-  );
-};
+  const [addBlock, setAddBlock] = useState(false)
+  return <RefContext.Provider value={{ addBlock, setAddBlock }}>{children}</RefContext.Provider>
+}

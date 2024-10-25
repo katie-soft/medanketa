@@ -1,21 +1,23 @@
 @import './styles/fonts.scss';
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
   font-family: 'Gilroy', sans-serif;
-  background-color: #F0F4F6;
+  background-color: #f0f4f6;
 }
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 a {
   text-decoration: none;
 }
-input, textarea, a {
+input,
+textarea,
+a {
   font-family: 'Gilroy', sans-serif;
 }

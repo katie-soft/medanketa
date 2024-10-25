@@ -18,16 +18,22 @@
     padding: 12px 24px;
     cursor: pointer;
     border-radius: 2rem;
-    transition: 0.3s color, 0.3s background-color;
+    transition:
+      0.3s color,
+      0.3s background-color;
     &:hover {
       color: #ffffff;
       background-color: #1c597b;
-      transition: 0.3s color, 0.3s background-color;
+      transition:
+        0.3s color,
+        0.3s background-color;
     }
     &.active {
       color: #ffffff;
       background-color: #1c597b;
-      transition: 0.3s color, 0.3s background-color;
+      transition:
+        0.3s color,
+        0.3s background-color;
     }
   }
 }

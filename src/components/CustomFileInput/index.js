@@ -1,39 +1,28 @@
-import React, { useState } from "react";
-import "./style.scss";
-const CustomFileInput = ({
-  label,
-  onChange,
-  placeholder,
-  icon: IconComponent,
-}) => {
-  const [fileName, setFileName] = useState("");
+import React, { useState } from 'react'
+import './style.scss'
+const CustomFileInput = ({ label, onChange, placeholder, icon: IconComponent }) => {
+  const [fileName, setFileName] = useState('')
 
   const handleChange = (e) => {
-    const file = e.target.files[0];
+    const file = e.target.files[0]
     if (file) {
-      setFileName(file.name);
+      setFileName(file.name)
       if (onChange) {
-        onChange(file);
+        onChange(file)
       }
     } else {
-      setFileName("");
+      setFileName('')
     }
-  };
+  }
 
   return (
-    <div className="input-group">
-      {label && <label className="file-input-label">{label}</label>}
-      <div className="input-wrapper">
-        <input
-          type="file"
-          id="file-upload"
-          className="file-input"
-          onChange={handleChange}
-          style={{ display: "none" }}
-        />
-        <label htmlFor="file-upload" className="custom-file-input">
+    <div className='input-group'>
+      {label && <label className='file-input-label'>{label}</label>}
+      <div className='input-wrapper'>
+        <input type='file' id='file-upload' className='file-input' onChange={handleChange} style={{ display: 'none' }} />
+        <label htmlFor='file-upload' className='custom-file-input'>
           {IconComponent && (
-            <span className="input-icon">
+            <span className='input-icon'>
               <IconComponent />
             </span>
           )}
@@ -41,7 +30,7 @@ const CustomFileInput = ({
         </label>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default CustomFileInput;
+export default CustomFileInput

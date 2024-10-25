@@ -1,93 +1,86 @@
-.admin-container{
-    width: 100%;
-    position: relative;
-    height: fit-content;
-    .switch-text {
+.admin-container {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  .switch-text {
     width: unset;
-}
-    @media screen and (max-width:1024px) {
-        gap: 33px;
-         .tab-content{
-          padding-left: 7px;
-    padding-right: 7px;
-    padding-top: 30px;
+  }
+  @media screen and (max-width: 1024px) {
+    gap: 33px;
+    .tab-content {
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-top: 30px;
     }
-     .toggle-anwser{
-    gap: 26px;
-    margin-left:0;
-}
+    .toggle-anwser {
+      gap: 26px;
+      margin-left: 0;
+    }
 
-.button.primary{    margin-bottom: 44px;
-}
-.card{
-    background-image: url("../../assets/img/editBg.png");
-    background-repeat: no-repeat;
-    padding-bottom:15vw;
-    background-size: cover;
-    background-position: bottom;
-}
-.btn-container{
-    padding: 14px 37px 31px 38px;
-}
+    .button.primary {
+      margin-bottom: 44px;
     }
-   
-    .prev-btn-slider,.next-btn-slider{
-        top: unset;
- 
-.tab-content{
-    gap: 24px;
-  
-}
-@media  screen and (max-width:1024px) {
-   
-.switch-text{
-    text-align: left;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19.41px;
-    color: #303030;
+    .card {
+      background-image: url('../../assets/img/editBg.png');
+      background-repeat: no-repeat;
+      padding-bottom: 15vw;
+      background-size: cover;
+      background-position: bottom;
     }
-    .explanation-text{
+    .btn-container {
+      padding: 14px 37px 31px 38px;
+    }
+  }
+
+  .prev-btn-slider,
+  .next-btn-slider {
+    top: unset;
+
+    .tab-content {
+      gap: 24px;
+    }
+    @media screen and (max-width: 1024px) {
+      .switch-text {
+        text-align: left;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.41px;
+        color: #303030;
+      }
+      .explanation-text {
         width: 100%;
         text-align: center;
+      }
     }
+  }
+  .save-btn {
+    bottom: 0;
+    right: 0;
+  }
 }
 
+.admin-cards {
+  .card-ui-wrapper {
+    @media screen and (max-width: 1024px) {
+      margin: auto;
     }
-    .save-btn{
-        bottom: 0;
-        right: 0;
-      
+    .wrapper p {
+      color: #303030;
+      margin-left: 0;
     }
+  }
 }
- 
-.admin-cards{
-
-
-.card-ui-wrapper{
-
-@media screen and (max-width:1024px) {
-    margin: auto;
-
-}
-.wrapper p{
-    color: #303030;
-    margin-left: 0;
-}
-}
- 
-} 
-.tab-content{
-    position: relative;
-    svg{
-        position: absolute;
-        right: 21px;
-    }
+.tab-content {
+  position: relative;
+  svg {
+    position: absolute;
+    right: 21px;
+  }
 }
 
-.toggle-anwser{
-    display: flex;
-    margin-left: 0;
-    gap: 43px;
-    flex-wrap: wrap;
- }
+.toggle-anwser {
+  display: flex;
+  margin-left: 0;
+  gap: 43px;
+  flex-wrap: wrap;
+}
