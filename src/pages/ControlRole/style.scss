@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .title-wrapper .links-wrapper {
   border: none;
 }
@@ -27,7 +29,7 @@
 }
 .control-roles .title-wrapper a .create-page.button.primary {
   width: 275px;
-  background-color: #1c597b;
+  background-color: $accent-color;
   color: white;
 }
 .roles-mob .mobile-card-container {

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .questionary-links {
   display: flex;
   gap: 57px;
@@ -14,7 +16,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 19.41px;
-    color: #303030;
+    color: $text-color;
     padding: 12px 24px;
     cursor: pointer;
     border-radius: 2rem;
@@ -22,15 +24,15 @@
       0.3s color,
       0.3s background-color;
     &:hover {
-      color: #ffffff;
-      background-color: #1c597b;
+      color: $light-color;
+      background-color: $accent-color;
       transition:
         0.3s color,
         0.3s background-color;
     }
     &.active {
-      color: #ffffff;
-      background-color: #1c597b;
+      color: $light-color;
+      background-color: $accent-color;
       transition:
         0.3s color,
         0.3s background-color;
@@ -43,7 +45,7 @@ thead td:first-child {
 }
 .anketa .title-wrapper a .create-page.button.primary {
   width: 203px;
-  background-color: #1c597b;
+  background-color: $accent-color;
   color: white;
   @media screen and (max-width: 1024px) {
     width: 400px;

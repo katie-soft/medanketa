@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .create-page-container .switch-text {
   width: unset !important;
 }
@@ -18,7 +20,7 @@
       font-weight: 500;
       line-height: 19.41px;
       font-size: 16px;
-      color: #303030;
+      color: $text-color;
     }
   }
 }
@@ -47,15 +49,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 19.41px;
-  color: #1c597b;
+  color: $accent-color;
   border: 1px solid #e4e4e4;
   border-radius: 50px;
-  background-color: #f0f4f6;
+  background-color: $base-color;
   height: 49px;
   white-space: nowrap;
 }
 .save-as-draft.button.primary {
-  background-color: #ffffff;
+  background-color: $light-color;
 }
 .btn-container.card-ui-wrapper {
   flex: unset;
@@ -85,10 +87,10 @@ textarea {
   line-height: 19.41px;
   color: #c4c6c7;
   padding: 16px 32px;
-  background-color: #ffffff;
+  background-color: $light-color;
   resize: none;
   border: none;
-  border-radius: 30px;
+  border-radius: $border-radius;
   height: 119px;
   .visited {
     border: 1px solid #c4c6c7;
@@ -97,10 +99,10 @@ textarea {
   &:focus-visible,
   &:focus {
     border: 1px solid #c4c6c7;
-    color: #303030;
+    color: $text-color;
     outline: none;
     &::placeholder {
-      color: #303030;
+      color: $text-color;
     }
   }
 }

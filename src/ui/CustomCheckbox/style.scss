@@ -1,7 +1,9 @@
+@import '../../styles/variables.scss';
+
 .checkbox-container {
-  background-color: #f0f4f6;
+  background-color: $base-color;
   padding: 14px 26px 14px 14px;
-  border-radius: 30px;
+  border-radius: $border-radius;
   display: inline-flex;
   align-items: center;
 }
@@ -25,15 +27,15 @@
     display: inline-block;
     width: 12px;
     height: 12px;
-    border: 1px solid #1c597b;
+    border: 1px solid $accent-color;
     border-radius: 2px;
     transition:
       background-color 0.3s,
       border-color 0.3s;
 
     &.checked {
-      background-color: #1c597b;
-      border-color: #1c597b;
+      background-color: $accent-color;
+      border-color: $accent-color;
     }
   }
 
@@ -41,6 +43,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    color: #303030;
+    color: $text-color;
   }
 }

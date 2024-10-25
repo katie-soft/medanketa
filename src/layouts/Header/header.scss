@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .header {
   &-wrapper {
     display: flex;
@@ -40,7 +42,7 @@
     .icon {
       svg {
         path {
-          stroke: #1c597b;
+          stroke: $accent-color;
         }
       }
       margin-right: unset;
@@ -175,7 +177,7 @@
   position: absolute;
   top: 49px;
   left: 0;
-  background-color: #fff;
+  background-color: $light-color;
   z-index: 10;
   width: 100%;
   border-bottom-left-radius: 30px;
@@ -199,7 +201,7 @@
     width: unset;
   }
   .user-logout {
-    color: #1c597b;
+    color: $accent-color;
     font-weight: 500;
     font-size: 18px;
     line-height: 21.19px;

@@ -1,3 +1,5 @@
+@import '../../../styles/variables.scss';
+
 .stat-cards {
   display: flex;
   gap: 27px;
@@ -10,7 +12,7 @@
   }
 
   .stat-number {
-    color: #1c597b;
+    color: $accent-color;
     font-size: 100px;
     font-weight: 900;
   }

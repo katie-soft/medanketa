@@ -1,12 +1,13 @@
+@import '../../styles/variables.scss';
+
 .question-card {
   position: relative;
-  background: url('../../assets/img/cardBg.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-color: $base-color;
   padding: 18px 18px 24px 21px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  border-radius: 30px;
 }
 
 .question-number {

@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 $border-color: #c4c6c7;
 
 .input-container {
@@ -28,7 +30,7 @@ $border-color: #c4c6c7;
 }
 
 .user-text {
-  color: #303030;
+  color: $text-color;
 }
 
 .transparent-input {
@@ -37,7 +39,7 @@ $border-color: #c4c6c7;
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  border-radius: $border-radius;
   font-weight: 500;
   font-size: 16px;
   line-height: 19.41px;

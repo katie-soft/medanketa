@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .directories-page thead th:first-child,
 thead td:first-child {
   width: 50% !important;
@@ -5,7 +7,7 @@ thead td:first-child {
 .create-directory-page .create-page.button.primary {
   width: fit-content;
   padding: 15px 23px 15px 28px;
-  color: #303030;
+  color: $text-color;
 }
 .directories-page {
   margin-bottom: 37px;
@@ -17,7 +19,7 @@ thead td:first-child {
   }
   .title-wrapper a .create-page.button.primary {
     width: 203px;
-    background-color: #1c597b;
+    background-color: $accent-color;
     color: white;
     @media screen and (max-width: 1024px) {
       width: 400px;
@@ -50,13 +52,13 @@ thead td:first-child {
 .description-directory-content {
   width: 100%;
   height: auto;
-  background-color: #f0f4f6;
+  background-color: $base-color;
   padding: 24px 24px 32px 24px;
   position: relative;
   display: flex;
   row-gap: 10px;
   column-gap: 27px;
-  border-radius: 30px;
+  border-radius: $border-radius;
   @media screen and (max-width: 1850px) {
     flex-wrap: wrap;
   }
@@ -85,7 +87,7 @@ thead td:first-child {
 
     &:last-child {
       width: 441px;
-      color: #303030 !important;
+      color: $text-color !important;
 
       @media screen and (max-width: 1024px) {
         width: 100%;
@@ -129,7 +131,7 @@ thead td:first-child {
   }
 }
 .input-group input {
-  border-radius: 30px;
+  border-radius: $border-radius;
   font-weight: 500;
   font-size: 16px;
   line-height: 19.41px;
@@ -167,7 +169,7 @@ thead td:first-child {
       padding: unset;
     }
     width: 330px;
-    background-color: #f0f4f6;
+    background-color: $base-color;
 
     position: relative;
     @media screen and (max-width: 1024px) {
@@ -188,7 +190,7 @@ thead td:first-child {
   position: relative;
   width: fit-content;
   .card-ui-wrapper {
-    color: #303030;
+    color: $text-color;
     margin-left: unset;
     font-weight: 500;
     font-size: 16px;
@@ -196,7 +198,7 @@ thead td:first-child {
     justify-content: start;
   }
   .card-ui-wrapper p {
-    color: #303030;
+    color: $text-color;
     margin-left: unset;
     font-weight: 500;
     font-size: 16px;
@@ -244,7 +246,7 @@ thead td:first-child {
   bottom: 24px;
   right: 24px;
 
-  background-color: #f0f4f6;
+  background-color: $base-color;
   @media screen and (max-width: 1024px) {
     width: 20px;
     height: 20px;
@@ -261,7 +263,7 @@ thead td:first-child {
 .active-card {
   .edit-button {
     svg path {
-      stroke: #1c597b;
+      stroke: $accent-color;
     }
   }
 }
@@ -378,10 +380,10 @@ thead td:first-child {
     &:focus-visible,
     &:focus {
       border: 1px solid #c4c6c7;
-      color: #303030;
+      color: $text-color;
       outline: none;
       &::placeholder {
-        color: #303030;
+        color: $text-color;
       }
     }
   }
@@ -389,6 +391,6 @@ thead td:first-child {
 .input-group .write-new-option {
   background: transparent;
   border: 1px solid #c4c6c7;
-  color: #303030;
+  color: $text-color;
   outline: none;
 }

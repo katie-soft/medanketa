@@ -1,8 +1,10 @@
+@import '../../styles/variables.scss';
+
 .footer {
   &-wrapper {
     height: 98px;
     border: 1px dashed #89898980;
-    border-radius: 30px;
+    border-radius: $border-radius;
     border-bottom: unset;
     border-bottom-left-radius: unset;
     border-bottom-right-radius: unset;
@@ -38,7 +40,7 @@
   align-items: center;
   justify-content: center;
   padding: 8px 10px 8px 36px;
-  color: #303030;
+  color: $text-color;
   &:hover {
     background-color: white;
     cursor: pointer;
@@ -48,7 +50,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    color: #303030;
+    color: $text-color;
     @media screen and (max-width: 1024px) {
       font-size: 14px;
       line-height: 16.98px;
