@@ -56,14 +56,14 @@ const Header = () => {
                         <path
                           d="M14 1.05713L1 14.0571"
                           stroke="#1C597B"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M14 14.0571L7.5 7.55713L1 1.05713"
                           stroke="#1C597B"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     ) : (
@@ -77,20 +77,20 @@ const Header = () => {
                         <path
                           d="M16 0.557129L1 0.557129"
                           stroke="#1C597B"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M16 6.55713L1 6.55713"
                           stroke="#1C597B"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                         <path
                           d="M16 12.5571L1 12.5571"
                           stroke="#1C597B"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
                         />
                       </svg>
                     )
@@ -100,7 +100,7 @@ const Header = () => {
                   <div className="burger-menu-content">
                     <WrapperUI className="sidebar-wrapper">
                       {sidebarItems.map((item) => (
-                        <React.Fragment>
+                        <React.Fragment key={item.id}>
                           {item.id === "support" && <hr />}
 
                           <Link

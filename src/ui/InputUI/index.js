@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "./inputUI.scss";
 
-const InputUI = ({ label, value, onChange, placeholder, type = 'text', error, classN = "",id }) => {
+const InputUI = ({
+  value,
+  onChange,
+  placeholder,
+  type = "text",
+  classN = "",
+  id,
+}) => {
   const [visited, setVisited] = useState(false);
 
   const onChangeinp = (e) => {
@@ -16,19 +23,17 @@ const InputUI = ({ label, value, onChange, placeholder, type = 'text', error, cl
     }
   };
 
-
   // const inputId = `${label?.replace(/\s+/g, '-').toLowerCase()}`;
 
   return (
     <div className="input-group">
-    
       <input
         id={id}
         type={type}
         value={value}
         onChange={onChangeinp}
         placeholder={placeholder}
-        className={`${classN} ${visited || value ? "visited" : ''}`}
+        className={`${classN} ${visited || value ? "visited" : ""}`}
       />
       {/* {error && <span className="error-message">{error}</span>} */}
     </div>

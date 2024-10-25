@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
-import "./style.scss";  
-const CustomFileInput = ({ label, onChange, placeholder, icon: IconComponent }) => {
-  const [fileName, setFileName] = useState('');
+import React, { useState } from "react";
+import "./style.scss";
+const CustomFileInput = ({
+  label,
+  onChange,
+  placeholder,
+  icon: IconComponent,
+}) => {
+  const [fileName, setFileName] = useState("");
 
   const handleChange = (e) => {
     const file = e.target.files[0];
@@ -11,7 +16,7 @@ const CustomFileInput = ({ label, onChange, placeholder, icon: IconComponent }) 
         onChange(file);
       }
     } else {
-      setFileName('');  
+      setFileName("");
     }
   };
 
@@ -22,17 +27,17 @@ const CustomFileInput = ({ label, onChange, placeholder, icon: IconComponent }) 
         <input
           type="file"
           id="file-upload"
-          className="file-input" 
+          className="file-input"
           onChange={handleChange}
-          style={{ display: 'none' }} 
+          style={{ display: "none" }}
         />
         <label htmlFor="file-upload" className="custom-file-input">
           {IconComponent && (
             <span className="input-icon">
-              <IconComponent />  
+              <IconComponent />
             </span>
           )}
-          {fileName || placeholder}  
+          {fileName || placeholder}
         </label>
       </div>
     </div>

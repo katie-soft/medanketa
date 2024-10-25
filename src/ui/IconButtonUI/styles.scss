@@ -1,0 +1,18 @@
+  .icon-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    &.close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 37px;
+      height: 37px;
+    }
+  }

@@ -14,29 +14,29 @@ import { useWindowResize } from "../../hooks/useWindowResize";
 
 export const Sidebar = () => {
   const [activeItem, setActiveItem] = useState("");
- const isMob=useWindowResize()?.width<1024
+  const isMob = useWindowResize()?.width < 1024;
 
   return (
     <aside>
-      {!isMob  &&
-      <WrapperUI>
-      <div className="sidebar-wrapper">
-  { sidebarItems.map((item, index) => (
-    <React.Fragment key={item.id}>
-      {item.id === "support" && <hr />}  
-      <Link
-        className={activeItem === item.id ? "active" : ""}
-        onClick={() => setActiveItem(item.id)}
-        to={item.path}
-      >
-        {item.icon}
-        {item.name}
-      </Link>
-    </React.Fragment>
-  ))}
-</div>
-      </WrapperUI>
-}
+      {!isMob && (
+        <WrapperUI>
+          <div className="sidebar-wrapper">
+            {sidebarItems.map((item) => (
+              <React.Fragment key={item.id}>
+                {item.id === "support" && <hr />}
+                <Link
+                  className={activeItem === item.id ? "active" : ""}
+                  onClick={() => setActiveItem(item.id)}
+                  to={item.path}
+                >
+                  {item.icon}
+                  {item.name}
+                </Link>
+              </React.Fragment>
+            ))}
+          </div>
+        </WrapperUI>
+      )}
 
       <div>
         <WrapperUI className="service-content">

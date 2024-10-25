@@ -1,5 +1,4 @@
 import React from "react";
-import TitleUI from "../../ui/TitleUI";
 import ToggleButtonUI from "../../ui/ToggleButtonUI";
 import { CardUI } from "../../ui/CardUI";
 import PageListHeader from "../../ui/PageListHeader";
@@ -12,7 +11,7 @@ import InputUI from "../../ui/InputUI";
 
 export const EditUser = () => {
   const isMob = useWindowResize().width < 1024;
-  
+
   return (
     <div className="admin-container list-pages">
       <PageListHeader
@@ -20,9 +19,13 @@ export const EditUser = () => {
         buttonText="Назад"
         path=""
         icon={Arrow}
-        description={isMob ? "Создавайте ваши персональные анкеты, и распространяйте среди пользователей" : undefined}
+        description={
+          isMob
+            ? "Создавайте ваши персональные анкеты, и распространяйте среди пользователей"
+            : undefined
+        }
       />
-      
+
       <div className="card">
         <div className="tab-content">
           <div className="admin-cards">
@@ -33,21 +36,34 @@ export const EditUser = () => {
               </div>
             </CardUI>
           </div>
-          
+
           <CardUI classN="btn-container">
             <div className="card-wrapper-content">
               <label>Роли</label>
               <div className="toggle-answer">
-                <ToggleButtonUI isActive={false} text="Управление ролями пользователей" />
-                <ToggleButtonUI isActive={false} text="Управление анкетами пользователей" />
-                <ToggleButtonUI isActive={true} text="Управление данными пользователей" />
+                <ToggleButtonUI
+                  isActive={false}
+                  text="Управление ролями пользователей"
+                />
+                <ToggleButtonUI
+                  isActive={false}
+                  text="Управление анкетами пользователей"
+                />
+                <ToggleButtonUI
+                  isActive={true}
+                  text="Управление данными пользователей"
+                />
               </div>
             </div>
           </CardUI>
-          
+
           <div className="explanation-text-block">
             <p className="explanation-text">
-              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается.
+              Давно выяснено, что при оценке дизайна и композиции читаемый текст
+              мешает сосредоточиться. Lorem Ipsum используют потому, что тот
+              обеспечивает более или менее стандартное заполнение шаблона, а
+              также реальное распределение букв и пробелов в абзацах, которое не
+              получается.
             </p>
             <ButtonUI text="Сохранить" icon={SaveIcon} classN="save-btn" />
           </div>

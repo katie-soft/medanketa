@@ -1,15 +1,18 @@
+import React from "react";
 import "./style.scss";
-import { useState, useEffect } from 'react';
-import PageListHeader from '../../ui/PageListHeader';
-import Banner from '../../components/Banner';
-import ButtonUI from '../../ui/ButtonUI';
-import TabsContainer from '../../ui/TabsContent';
-import MainSettings from './MainSettings/MainSettings';
-import Availability from './Availability/Availability';
-import Statistics from './Statistics/Statistics';
+import { useState, useEffect } from "react";
+import PageListHeader from "../../ui/PageListHeader";
+import Banner from "../../components/Banner";
+import ButtonUI from "../../ui/ButtonUI";
+import TabsContainer from "../../ui/TabsContent";
+import MainSettings from "./MainSettings/MainSettings";
+import Availability from "./Availability/Availability";
+import Statistics from "./Statistics/Statistics";
+import Questions from "./Questions/Questions";
+import { questions } from "../../helpers/data";
 
 const CreateQuestionary = () => {
-    const tabs = [
+  const tabs = [
     { label: "Основные настройки", tabName: "main" },
     { label: "Вопросы", tabName: "questions" },
     { label: "Доступность", tabName: "availability" },
@@ -40,7 +43,7 @@ const CreateQuestionary = () => {
   useEffect(() => {
     localStorage.setItem(
       "activeQTab",
-      JSON.stringify({ activeQTab, activeQIndex })
+      JSON.stringify({ activeQTab, activeQIndex }),
     );
   }, [activeQTab, activeQIndex]);
 
@@ -54,7 +57,7 @@ const CreateQuestionary = () => {
       case "main":
         return <MainSettings />;
       case "questions":
-        return <>2</>;
+        return <Questions questionList={questions} />;
       case "availability":
         return <Availability />;
       case "statistics":
@@ -65,24 +68,30 @@ const CreateQuestionary = () => {
   };
 
   return (
-      <section className='questionary-wrapper'>
-        <PageListHeader titleText='Создание анкеты'  description='Создавайте ваши персональные анкеты, и распространяйте среди пользователей'>
-          <ButtonUI text='Сохранить как черновик' type='transparent' onClick={() => {}} />
-          <ButtonUI text='Шаблон' type='transparent' onClick={() => {}} />
-        </PageListHeader>
-        <div className='questionary-content'>
-          <Banner />
-          <TabsContainer
-            renderContent={renderContent}
-            backWard={true}
-            tabs={tabs}
-            handleClick={handleClick}
-            activeIndex={activeQIndex}
-          ></TabsContainer>
-        </div>        
-      </section>
-  )
-}
+    <section className="questionary-wrapper">
+      <PageListHeader
+        titleText="Создание анкеты"
+        description="Создавайте ваши персональные анкеты, и распространяйте среди пользователей"
+      >
+        <ButtonUI
+          text="Сохранить как черновик"
+          type="transparent"
+          onClick={() => {}}
+        />
+        <ButtonUI text="Шаблон" type="transparent" onClick={() => {}} />
+      </PageListHeader>
+      <div className="questionary-content">
+        <Banner />
+        <TabsContainer
+          renderContent={renderContent}
+          backWard={true}
+          tabs={tabs}
+          handleClick={handleClick}
+          activeIndex={activeQIndex}
+        ></TabsContainer>
+      </div>
+    </section>
+  );
+};
 
 export default CreateQuestionary;
- 

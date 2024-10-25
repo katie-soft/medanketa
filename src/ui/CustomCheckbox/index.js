@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import './style.scss'; // SCSS styling
+import React, { useState } from "react";
+import "./style.scss"; // SCSS styling
 
 const CustomCheckbox = ({ label }) => {
   const [isChecked, setIsChecked] = useState(false);
@@ -16,7 +16,7 @@ const CustomCheckbox = ({ label }) => {
           checked={isChecked}
           onChange={handleCheckboxChange}
         />
-        <span className={`checkmark ${isChecked ? 'checked' : ''}`}></span>
+        <span className={`checkmark ${isChecked ? "checked" : ""}`}></span>
         <span className="checkbox-label">{label}</span>
       </label>
     </div>

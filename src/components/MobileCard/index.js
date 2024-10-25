@@ -4,6 +4,7 @@ import ToggleButtonUI from "../../ui/ToggleButtonUI";
 import { ReactComponent as Pen } from "../../assets/svg/pen.svg";
 import { ReactComponent as CloseIcon } from "../../assets/svg/close.svg";
 import TitleUI from "../../ui/TitleUI";
+
 import "./style.scss";
 
 const MobileCard = ({
@@ -14,14 +15,13 @@ const MobileCard = ({
   creator,
   edit,
   remove,
-  recipient,
   iconCreator,
   typeAction,
   iconType,
   action,
   orderNumber,
   role,
-  onClick 
+  onClick,
 }) => {
   return (
     <div className="mobile-card-container">
@@ -31,12 +31,12 @@ const MobileCard = ({
             <div className="mobile-card-content-name">
               <TitleUI text="Название" level="3" />
               {iconTitle && name ? (
-                <div className="title-mob-card" onClick={onClick}> 
+                <div className="title-mob-card" onClick={onClick}>
                   <span>{iconTitle}</span>
                   <TitleUI text={name} level="2" />
                 </div>
               ) : name ? (
-                <div className="title-mob-card" onClick={onClick}>  
+                <div className="title-mob-card" onClick={onClick}>
                   <TitleUI text={name} level="2" />
                 </div>
               ) : null}

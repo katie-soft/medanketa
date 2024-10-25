@@ -9,22 +9,16 @@ import { IconWrapperUI } from "../../ui/IconWrapperUI";
 import InputUI from "../../ui/InputUI";
 import ButtonUI from "../../ui/ButtonUI";
 import { ReactComponent as SaveIcon } from "../../assets/svg/save.svg";
-import { questions } from "../../helpers/data";
-import MedicineQuestionCard from "../../components/MedicineQuestionCard";
 import useWindowResize from "../../hooks/useWindowResize";
 import { ReactComponent as ArrowSlider } from "../../assets/svg/sliderArrow.svg";
 import CustomFileInput from "../../components/CustomFileInput";
 import { ReactComponent as UploadIcon } from "../../assets/svg/save.svg"; // Import your icon
 
 const CreateDirectories = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
   const ref = useRef();
   const isMob = useWindowResize().width < 1024;
   const [textAreaValue, setTextAreaValue] = useState();
 
-  const handleCardClick = (index) => {
-    setActiveIndex(index);
-  };
   const [visited, setVisited] = useState(false);
 
   const onChangeinp = (e) => {
@@ -113,40 +107,6 @@ const CreateDirectories = () => {
               </div>
             </div>
             <ButtonUI text="Сохранить" icon={SaveIcon} classN="save-btn" />
-          </div>
-
-          <div className="medicine-questions ">
-            <div className="shadow"></div>
-            {questions.map((item, index) => (
-              <div
-                key={index}
-                style={{ zIndex: activeIndex === index ? 2 : 0 }}
-                className={activeIndex === index ? "active-card" : ""}
-              >
-                <MedicineQuestionCard
-                  active={activeIndex === index}
-                  onClick={() => handleCardClick(index)}
-                  {...item}
-                />
-              </div>
-            ))}
-            <button className="more-question">
-              Еще вопросы
-              <svg
-                width="14"
-                height="8"
-                viewBox="0 0 14 8"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L7 7L13 1"
-                  stroke="#898989"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </button>
           </div>
         </div>
       </div>

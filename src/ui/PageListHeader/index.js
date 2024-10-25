@@ -21,15 +21,16 @@ const PageListHeader = ({
       </div>
       <div className={`${children ? "links-wrapper" : ""}`}>
         {children}
-        {buttonText &&  <Link to={path}>
-          <ButtonUI
-            classN="create-page"
-            text={buttonText}
-            onClick={onButtonClick}
-            icon={icon} 
-          />
-        </Link>}
-       
+        {buttonText && (
+          <Link to={path}>
+            <ButtonUI
+              classN="create-page"
+              text={buttonText}
+              onClick={onButtonClick}
+              icon={icon}
+            />
+          </Link>
+        )}
       </div>
     </div>
   );

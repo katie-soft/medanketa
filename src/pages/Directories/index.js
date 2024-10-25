@@ -6,6 +6,7 @@ import PageListHeader from "../../ui/PageListHeader";
 import TableUI from "../../ui/TableUI";
 import WrapperUI from "../../ui/WrapperUI";
 import "./style.scss";
+
 export const Directories = () => {
   const headers = [
     { title: "Название" },
@@ -13,7 +14,9 @@ export const Directories = () => {
     { title: "Статус" },
     { title: "Действие" },
   ];
+
   const isMob = useWindowResize().width < 1024;
+
   return (
     <div className="list-pages directories-page">
       <PageListHeader

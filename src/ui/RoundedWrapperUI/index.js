@@ -1,11 +1,14 @@
-import React from 'react'
-import "./roundedWrapperUI.scss"
+import React from "react";
+import "./roundedWrapperUI.scss";
 
- const RoundedWrapperUI = ({bgColor,children, width, className=""}) => {
+const RoundedWrapperUI = ({ bgColor, children, width, className = "" }) => {
   return (
-    <div style={{backgroundColor:bgColor,width:width}} className={`${className} rounded-wrapper`}>
-{children}
+    <div
+      style={{ backgroundColor: bgColor, width: width }}
+      className={`${className} rounded-wrapper`}
+    >
+      {children}
     </div>
-  )
-}
-export default RoundedWrapperUI
+  );
+};
+export default RoundedWrapperUI;

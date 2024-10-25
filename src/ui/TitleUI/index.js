@@ -1,5 +1,5 @@
-import React from 'react';
-import "./titleUI.scss"
+import React from "react";
+import "./titleUI.scss";
 
 const TitleUI = ({ text, level = 1 }) => {
   const Tag = `h${level}`;

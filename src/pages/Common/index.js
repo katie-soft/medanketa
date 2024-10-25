@@ -33,7 +33,7 @@ export const Common = () => {
   useEffect(() => {
     localStorage.setItem(
       "activeTab",
-      JSON.stringify({ activeTab, activeIndex })
+      JSON.stringify({ activeTab, activeIndex }),
     );
   }, [activeTab, activeIndex]);
 
