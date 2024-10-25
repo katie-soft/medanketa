@@ -1,38 +1,38 @@
-import React from 'react'
-import { useState } from 'react'
-import { CardUI } from '../../../ui/CardUI'
-import FileInputUI from '../../../ui/FileInputUI/FileInputUI'
-import InputUI from '../../../ui/InputUI'
+import React from 'react';
+import { useState } from 'react';
+import { CardUI } from '../../../ui/CardUI';
+import FileInputUI from '../../../ui/FileInputUI/FileInputUI';
+import InputUI from '../../../ui/InputUI';
 
-import './styles.scss'
+import './styles.scss';
 
 const MainSettings = () => {
-  const [qTitle, setQTitle] = useState('')
-  const [qDescription, setQDescription] = useState('')
+  const [qTitle, setQTitle] = useState('');
+  const [qDescription, setQDescription] = useState('');
 
   return (
-    <div className='settings-cards-wrapper'>
+    <div className="settings-cards-wrapper">
       <FileInputUI />
       <CardUI>
-        <div className='card-wrapper-content'>
+        <div className="card-wrapper-content">
           <InputUI
-            id='page-title'
-            label='page-title'
-            placeholder='Название Меданкеты'
+            id="page-title"
+            label="page-title"
+            placeholder="Название Меданкеты"
             value={qTitle}
             onChange={(e) => setQTitle(e.target.value)}
           />
           <p>Не более 250 символов</p>
         </div>
-        <div className='card-wrapper-content'>
+        <div className="card-wrapper-content">
           <textarea
-            id='announcement'
-            name='announcement'
-            cols='30'
-            rows='10'
+            id="announcement"
+            name="announcement"
+            cols="30"
+            rows="10"
             value={qDescription}
             onChange={(e) => setQDescription(e.target.value)}
-            placeholder='Описание Меданкеты'
+            placeholder="Описание Меданкеты"
           >
             Текстовый анонс или краткое описание
           </textarea>
@@ -40,7 +40,7 @@ const MainSettings = () => {
         </div>
       </CardUI>
     </div>
-  )
-}
+  );
+};
 
-export default MainSettings
+export default MainSettings;
