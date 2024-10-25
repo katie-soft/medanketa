@@ -1,25 +1,25 @@
-import React from 'react'
-import { useRoutes } from 'react-router-dom'
-import { AboutUs } from '../pages/AboutUs'
-import { AllPages } from '../pages/AllPages'
-import { Common } from '../pages/Common'
-import { Contact } from '../pages/Contact'
-import { CreatePage } from '../pages/CreatePage'
-import { Directories } from '../pages/Directories'
-import { Faq } from '../pages/FAQ'
-import { Logs } from '../pages/Logs'
-import { NotFound } from '../pages/NotFound'
-import { PrivacyPolicy } from '../pages/PrivacyPolicy'
-import { Settings } from '../pages/Settings'
-import { Support } from '../pages/Support'
-import { Users } from '../pages/Users'
-import Questionary from '../pages/Questionary'
-import CreateQuestionary from '../pages/CreateQuestionary'
-import { Layout } from '../layouts'
-import { ControlRoles } from '../pages/ControlRole'
-import { AddRole } from '../pages/AddRole'
-import { EditUser } from '../pages/EditUser'
-import CreateDirectories from '../pages/Directories/CreateDirectories'
+import React from 'react';
+import { useRoutes } from 'react-router-dom';
+import { AboutUs } from '../pages/AboutUs';
+import { AllPages } from '../pages/AllPages';
+import { Common } from '../pages/Common';
+import { Contact } from '../pages/Contact';
+import { CreatePage } from '../pages/CreatePage';
+import { Directories } from '../pages/Directories';
+import { Faq } from '../pages/FAQ';
+import { Logs } from '../pages/Logs';
+import { NotFound } from '../pages/NotFound';
+import { PrivacyPolicy } from '../pages/PrivacyPolicy';
+import { Settings } from '../pages/Settings';
+import { Support } from '../pages/Support';
+import { Users } from '../pages/Users';
+import Questionary from '../pages/Questionary';
+import CreateQuestionary from '../pages/CreateQuestionary';
+import { Layout } from '../layouts';
+import { ControlRoles } from '../pages/ControlRole';
+import { AddRole } from '../pages/AddRole';
+import { EditUser } from '../pages/EditUser';
+import CreateDirectories from '../pages/Directories/CreateDirectories';
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -45,12 +45,12 @@ const AppRoutes = () => {
         { path: 'users', element: <Users /> },
         { path: 'users/control-roles', element: <ControlRoles /> },
         { path: 'users/control-roles/add-role', element: <AddRole /> },
-        { path: '*', element: <NotFound /> }
-      ]
-    }
-  ])
+        { path: '*', element: <NotFound /> },
+      ],
+    },
+  ]);
 
-  return routes
-}
+  return routes;
+};
 
-export default AppRoutes
+export default AppRoutes;

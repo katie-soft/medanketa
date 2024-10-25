@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .switcher-content {
   width: 34px;
   height: 17px;
@@ -30,7 +32,7 @@
 
     &.active {
       transform: translateX(16px);
-      background-color: #1c597b;
+      background-color: $accent-color;
     }
   }
 }
@@ -43,7 +45,7 @@
   text-align: center;
 
   &.active {
-    color: #1c597b;
+    color: $accent-color;
   }
 }
 

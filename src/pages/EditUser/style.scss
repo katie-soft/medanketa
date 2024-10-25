@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .admin-container {
   width: 100%;
   position: relative;
@@ -45,7 +47,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 19.41px;
-        color: #303030;
+        color: $text-color;
       }
       .explanation-text {
         width: 100%;
@@ -65,7 +67,7 @@
       margin: auto;
     }
     .wrapper p {
-      color: #303030;
+      color: $text-color;
       margin-left: 0;
     }
   }

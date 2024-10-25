@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .social-media-choose {
   display: flex;
   gap: 14px;
@@ -36,12 +38,12 @@
   }
 }
 .add-social-media-block {
-  border-radius: 30px;
+  border-radius: $border-radius;
   background-color: white;
   font-weight: 500;
   font-size: 16px;
   line-height: 19.41px;
-  color: #1c597b;
+  color: $accent-color;
   padding: 15px 22px 15px 25px;
   border: none;
   outline: none;

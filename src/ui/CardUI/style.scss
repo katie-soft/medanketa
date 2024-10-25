@@ -1,7 +1,9 @@
+@import '../../styles/variables.scss';
+
 .card-ui-wrapper {
   width: 100%;
-  border-radius: 30px;
-  background-color: #f0f4f6;
+  border-radius: $border-radius;
+  background-color: $base-color;
   padding: 24px 24px 32px 24px;
   display: flex;
   flex-direction: column;

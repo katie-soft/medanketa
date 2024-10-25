@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .card-ui-wrapper .card-wrapper-content .toggle-answer {
   display: flex;
   flex-wrap: wrap;
@@ -73,10 +75,10 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 22.41px;
-  color: #1c597b;
+  color: $accent-color;
   border: 1px solid #e4e4e4;
   border-radius: 50px;
-  background-color: #f0f4f6;
+  background-color: $base-color;
   width: 113px;
   gap: 13px;
 }
@@ -90,7 +92,7 @@
 .add-role-cards .input-group {
   margin-bottom: unset;
   input {
-    border-radius: 30px;
+    border-radius: $border-radius;
     font-weight: 500;
     font-family: Gilroy;
     font-size: 16px;
@@ -110,10 +112,10 @@
     &:focus-visible,
     &:focus {
       border: 1px solid #c4c6c7;
-      color: #303030;
+      color: $text-color;
       outline: none;
       &::placeholder {
-        color: #303030;
+        color: $text-color;
       }
     }
   }
@@ -141,7 +143,7 @@ input:-webkit-autofill:active {
   font-weight: 500;
   font-size: 14px;
   line-height: 16.98px;
-  color: #303030;
+  color: $text-color;
   margin-left: 30px;
   display: flex;
   align-items: center;

@@ -1,6 +1,8 @@
+@import '../../styles/variables.scss';
+
 .input-wrapper .custom-file-input {
   width: 100%;
-  background-color: #ffffff;
+  background-color: $light-color;
   border: 1px solid transparent;
   outline: none;
   border-radius: 30px;

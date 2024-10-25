@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .wrapper {
   background-color: white;
   width: 310px;
@@ -58,20 +60,20 @@ aside {
   }
 
   &:hover {
-    color: #1c597b;
-    background-color: #f0f4f6;
-    border-radius: 30px;
+    color: $accent-color;
+    background-color: $base-color;
+    border-radius: $border-radius;
     .sidebar-icon path {
-      stroke: #1c597b;
+      stroke: $accent-color;
     }
   }
 
   &.active {
-    color: #1c597b;
-    background-color: #f0f4f6;
-    border-radius: 30px;
+    color: $accent-color;
+    background-color: $base-color;
+    border-radius: $border-radius;
     .sidebar-icon path {
-      stroke: #1c597b;
+      stroke: $accent-color;
     }
   }
 }
@@ -95,7 +97,7 @@ aside {
   }
   .arrow-icon {
     margin-left: auto;
-    background-color: #303030;
+    background-color: $text-color;
     transform: rotate(180deg);
     width: 49px;
     min-width: 49px;
@@ -128,13 +130,13 @@ aside {
     font-size: 35px;
     font-weight: 600;
     line-height: 40px;
-    color: #ffffff;
+    color: $light-color;
   }
   p {
     font-size: 16px;
     font-weight: 500;
     line-height: 19.41px;
-    color: #ffffff;
+    color: $light-color;
   }
 }
 .user-add-wrapper.wrapper {
@@ -164,7 +166,7 @@ aside {
     position: relative;
     left: 6px;
     font-size: 18px;
-    background-color: #1c597b;
+    background-color: $accent-color;
     @media screen and (max-width: 370px) {
       width: 45px;
       height: 45px;

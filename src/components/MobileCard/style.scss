@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .mobile-card {
   h3 {
     color: #999999;
@@ -12,8 +14,8 @@
 }
 .mobile-card-container {
   padding: 24px;
-  border-radius: 30px;
-  background-color: #f0f4f6;
+  border-radius: $border-radius;
+  background-color: $base-color;
   width: 100%;
   position: relative;
   .close-icon {
@@ -46,7 +48,7 @@
   min-height: 30px;
   h2,
   .role-mob-card .title-2 {
-    color: #303030;
+    color: $text-color;
     font-weight: 500;
     font-size: 1em;
     line-height: 22px;
@@ -79,7 +81,7 @@
   gap: 27px 14px;
   background-color: white;
   padding: 27px 13px 38px 13px;
-  border-radius: 30px;
+  border-radius: $border-radius;
   @media screen and (max-width: 1024px) {
     padding: 12px 12px 24px 12px;
   }
@@ -105,7 +107,7 @@
 }
 
 .role-mob-card .title-2 {
-  color: #303030;
+  color: $text-color;
   font-weight: 500;
   font-size: 1em;
   line-height: 22px;

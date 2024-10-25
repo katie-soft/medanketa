@@ -1,8 +1,10 @@
+@import '../../styles/variables.scss';
+
 .file-input-wrapper {
   background: url('../../assets/img/fileBg.png');
   background-repeat: no-repeat;
   background-size: contain;
-  border-radius: 30px;
+  border-radius: $border-radius;
   position: relative;
 
   .file-input {

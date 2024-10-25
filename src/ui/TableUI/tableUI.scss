@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 table {
   width: 100%;
   border-collapse: separate;
@@ -39,7 +41,7 @@ tbody td {
     font-size: 50px;
     font-weight: 500;
     line-height: 60.65px;
-    color: #303030;
+    color: $text-color;
   }
   p {
     font-size: 16px;
@@ -53,11 +55,11 @@ tbody td {
   }
 }
 .table-content-tr {
-  background-color: #f0f4f6;
+  background-color: $base-color;
 }
 thead th {
-  border-bottom: 1px solid #f0f4f6;
-  border-top: 1px solid #f0f4f6;
+  border-bottom: 1px solid $base-color;
+  border-top: 1px solid $base-color;
   padding: 10px;
   text-align: left;
   padding: 12px 27px 12px 32px;
@@ -68,10 +70,10 @@ thead th {
 }
 
 thead th:first-child {
-  border-left: 1px solid #f0f4f6;
+  border-left: 1px solid $base-color;
 }
 thead th:last-child {
-  border-right: 1px solid #f0f4f6;
+  border-right: 1px solid $base-color;
 }
 table td {
   width: calc(100% / 4);
@@ -79,7 +81,7 @@ table td {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: #303030;
+  color: $text-color;
 }
 
 table td:first-of-type,
@@ -167,7 +169,7 @@ table td:last-of-type {
   font-size: 16px;
 }
 .ordernumber {
-  color: #1c597b;
+  color: $accent-color;
 }
 .td-radius td {
   &:nth-last-child(2) {

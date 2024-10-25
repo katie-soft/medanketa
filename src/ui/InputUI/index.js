@@ -1,25 +1,25 @@
-import React, { useState } from 'react'
-import './inputUI.scss'
+import React, { useState } from 'react';
+import './inputUI.scss';
 
 const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id }) => {
-  const [visited, setVisited] = useState(false)
+  const [visited, setVisited] = useState(false);
 
   const onChangeinp = (e) => {
     if (e.target.value) {
-      setVisited(true)
+      setVisited(true);
     } else {
-      setVisited(false)
+      setVisited(false);
     }
 
     if (onChange) {
-      onChange(e)
+      onChange(e);
     }
-  }
+  };
 
   // const inputId = `${label?.replace(/\s+/g, '-').toLowerCase()}`;
 
   return (
-    <div className='input-group'>
+    <div className="input-group">
       <input
         id={id}
         type={type}
@@ -30,7 +30,7 @@ const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id 
       />
       {/* {error && <span className="error-message">{error}</span>} */}
     </div>
-  )
-}
+  );
+};
 
-export default InputUI
+export default InputUI;
