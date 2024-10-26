@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './inputUI.scss';
 
-const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id }) => {
+const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id, hasCopyButton = false }) => {
   const [visited, setVisited] = useState(false);
 
   const onChangeinp = (e) => {
@@ -28,6 +28,11 @@ const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id 
         placeholder={placeholder}
         className={`${classN} ${visited || value ? 'visited' : ''}`}
       />
+      {hasCopyButton && (
+        <button className="input-copy-button" onClick={() => navigator.clipboard.writeText(value)}>
+          Скопировать
+        </button>
+      )}
       {/* {error && <span className="error-message">{error}</span>} */}
     </div>
   );
