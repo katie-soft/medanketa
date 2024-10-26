@@ -80,6 +80,9 @@ const CreateQuestionary = () => {
           tabs={tabs}
           handleClick={handleClick}
           activeIndex={activeQIndex}
+          explanationText={
+            'Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается '
+          }
         ></TabsContainer>
       </div>
     </section>

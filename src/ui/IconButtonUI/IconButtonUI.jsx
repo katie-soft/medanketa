@@ -1,9 +1,15 @@
 import React from 'react';
 import './styles.scss';
 import { ReactComponent as CloseIcon } from '../../assets/svg/closeRed.svg';
+import { ReactComponent as EditIcon } from '../../assets/svg/pen.svg';
 
 const IconButtonUI = ({ type, className }) => {
-  return <button className={`icon-button ${type} ${className}`}>{type === 'close' && <CloseIcon />}</button>;
+  return (
+    <button className={`icon-button ${type} ${className}`}>
+      {type === 'close' && <CloseIcon />}
+      {type === 'edit' && <EditIcon />}
+    </button>
+  );
 };
 
 export default IconButtonUI;

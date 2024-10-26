@@ -8,7 +8,7 @@ import useWindowResize from '../../hooks/useWindowResize';
 import { IconWrapperUI } from '../IconWrapperUI';
 import { RefProvider } from '../../Context/refHeight';
 
-const TabsContainer = ({ tabs, activeIndex, handleClick, renderContent, cardHeight = 'auto' }) => {
+const TabsContainer = ({ tabs, activeIndex, handleClick, renderContent, cardHeight = 'auto', explanationText }) => {
   const ref = useRef();
   const isMob = useWindowResize().width < 1024;
   const [, setDynamicHeight] = useState(cardHeight);
@@ -64,11 +64,7 @@ const TabsContainer = ({ tabs, activeIndex, handleClick, renderContent, cardHeig
           {renderContent()}
 
           <div className="explanation-text-block">
-            <p className="explanation-text">
-              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
-              используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-              распределение букв и пробелов в абзацах, которое не получается.
-            </p>
+            {explanationText && <p className="explanation-text">{explanationText}</p>}
             <div className="btn-wrapper">
               <ButtonUI text="Сохранить" icon={SaveIcon} classN="save-btn" />
             </div>
