@@ -12,6 +12,16 @@ import { ReactComponent as SettingIcon } from '../assets/svg/setting.svg';
 import { ReactComponent as SpravochnikIcon } from '../assets/svg/spravochnik.svg';
 import { ReactComponent as UserIcon } from '../assets/svg/sidebarUser.svg';
 
+import {
+  SymbolsNum,
+  NumberRange,
+  DateRange,
+  TimeRange,
+  Select,
+  DirectorySelect,
+  Scale,
+} from '../pages/CreateQuestionary/Questions/AdditionalFields/index.js';
+
 export const allPageData = [
   {
     name: 'Главная',
@@ -274,13 +284,67 @@ export const sidebarItems = [
 ];
 
 export const questionTypes = [
-  { value: 'infoblock', label: 'Инфоблок' },
-  { value: 'scale', label: 'Оценка по шкале' },
-  { value: 'single-select', label: 'Одиночный выбор' },
-  { value: 'multiple-select', label: 'Несколько вариантов ответов' },
-  { value: 'time', label: 'Время' },
-  { value: 'date', label: 'Дата' },
-  { value: 'numbers', label: 'Числа' },
-  { value: 'text', label: 'Ввод текста' },
-  { value: 'directory', label: 'Справочник' },
+  { value: 'infoblock', label: 'Инфоблок', fields: [] },
+  {
+    value: 'scale',
+    label: 'Оценка по шкале',
+    fields: (
+      <Scale
+        startOptions={[
+          { value: 'ib', name: 'Ибупрофен' },
+          { value: 'asp', name: 'Аспирин' },
+          { value: 'ug', name: 'Активированный уголь' },
+        ]}
+        startAnswers={[
+          { value: '1', name: 'Недоволен' },
+          { value: '2', name: 'Скорее недоволен' },
+          { value: '3', name: 'Скорее доволен' },
+          { value: '4', name: 'Доволен' },
+        ]}
+      />
+    ),
+  },
+  {
+    value: 'single-select',
+    label: 'Одиночный выбор',
+    fields: (
+      <Select
+        startOptions={[
+          { value: 'ib', name: 'Ибупрофен' },
+          { value: 'asp', name: 'Аспирин' },
+          { value: 'ug', name: 'Активированный уголь' },
+        ]}
+      />
+    ),
+  },
+  {
+    value: 'multiple-select',
+    label: 'Несколько вариантов ответов',
+    fields: (
+      <Select
+        startOptions={[
+          { value: 'ib', name: 'Ибупрофен' },
+          { value: 'asp', name: 'Аспирин' },
+          { value: 'ug', name: 'Активированный уголь' },
+        ]}
+      />
+    ),
+  },
+  { value: 'time', label: 'Время', fields: <TimeRange /> },
+  { value: 'date', label: 'Дата', fields: <DateRange /> },
+  { value: 'numbers', label: 'Числа', fields: <NumberRange /> },
+  { value: 'text', label: 'Ввод текста', fields: <SymbolsNum /> },
+  { value: 'directory-select', label: 'Справочник', fields: <DirectorySelect directoryId="MKB10" /> },
+];
+
+export const directories = [
+  {
+    name: 'МКБ10',
+    value: 'MKB10',
+    options: [
+      { value: 'ib', name: 'Ибупрофен' },
+      { value: 'asp', name: 'Аспирин' },
+      { value: 'ug', name: 'Активированный уголь' },
+    ],
+  },
 ];

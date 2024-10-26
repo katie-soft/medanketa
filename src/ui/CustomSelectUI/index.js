@@ -27,7 +27,7 @@ const CustomSelect = ({
   };
 
   return (
-    <div className="custom-select" style={{ borderRadius: '30px', position: 'relative' }}>
+    <div className="custom-select">
       <div className="select-box" onClick={handleToggle}>
         <span className="selected-option">
           {selectedOption ? (

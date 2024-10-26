@@ -1,0 +1,32 @@
+.inputs-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .toggle-button-ui {
+    margin-left: 21px;
+  }
+
+  .options-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+}
+
+.columns-wrapper {
+  display: flex;
+  gap: 27px;
+
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0 !important;
+    gap: 10px !important;
+
+    .toggle-button-ui {
+      margin-bottom: 12px;
+    }
+  }
+}

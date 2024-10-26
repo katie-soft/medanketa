@@ -4,6 +4,7 @@ import TextareaUI from '../../../../ui/TextareaUI/TextareaUI';
 import CustomSelect from '../../../../ui/CustomSelectUI';
 import ToggleButtonUI from '../../../../ui/ToggleButtonUI';
 import ButtonUI from '../../../../ui/ButtonUI';
+import AdditionalFields from '../AdditionalFields/AdditionalFields';
 import { ReactComponent as SaveIcon } from '../../../../assets/svg/save.svg';
 import { questionTypes } from '../../../../helpers/data';
 
@@ -55,7 +56,7 @@ const EditQuestion = ({ questionParams, onSave }) => {
               onSelect={handleQuestionTypeSelect}
             />
           </div>
-          {questionType}
+          <AdditionalFields questionType={questionType} />
         </div>
         <div className="row">
           <ToggleButtonUI isActive={questionParams.initialIsRequired} text="Обязательный вопрос" />
