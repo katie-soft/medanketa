@@ -5,12 +5,20 @@ import CustomSelect from '../../../../ui/CustomSelectUI';
 import ToggleButtonUI from '../../../../ui/ToggleButtonUI';
 import ButtonUI from '../../../../ui/ButtonUI';
 import { ReactComponent as SaveIcon } from '../../../../assets/svg/save.svg';
+import { questionTypes } from '../../../../helpers/data';
 
 import './styles.scss';
 
 const EditQuestion = ({ questionParams, onSave }) => {
   const [questionText, setQuestionText] = useState(questionParams.initialQuestionText || '');
   const [additionalText, setAdditionalText] = useState(questionParams.initialAdditionalText || '');
+  const [questionType, setQuestionType] = useState(questionParams.initialQuestionType);
+
+  const questionTypeName = questionTypes.filter((question) => question.value === questionType)[0].label;
+
+  const handleQuestionTypeSelect = (value) => {
+    setQuestionType(value);
+  };
 
   return (
     <CardUI classN="edit-question">
@@ -40,8 +48,14 @@ const EditQuestion = ({ questionParams, onSave }) => {
         <div className="row">
           <div className="question-wrapper">
             <p>Тип вопроса</p>
-            <CustomSelect placeholder={questionParams.initialQuestionType} />
+            <CustomSelect
+              options={questionTypes}
+              selectedOption={questionTypeName}
+              placeholder="Выберите тип вопроса"
+              onSelect={handleQuestionTypeSelect}
+            />
           </div>
+          {questionType}
         </div>
         <div className="row">
           <ToggleButtonUI isActive={questionParams.initialIsRequired} text="Обязательный вопрос" />

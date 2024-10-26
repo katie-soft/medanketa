@@ -8,7 +8,7 @@ const Questions = ({ questionList }) => {
   const newQuestionParams = {
     initialQuestionText: '',
     initialAdditionalText: '',
-    initialQuestionType: 'Текстовый',
+    initialQuestionType: 'infoblock',
     initialIsRequired: false,
   };
   const [isEditFormOpen, setIsEditFormOpen] = useState(false);

@@ -272,3 +272,15 @@ export const sidebarItems = [
     path: 'faq',
   },
 ];
+
+export const questionTypes = [
+  { value: 'infoblock', label: 'Инфоблок' },
+  { value: 'scale', label: 'Оценка по шкале' },
+  { value: 'single-select', label: 'Одиночный выбор' },
+  { value: 'multiple-select', label: 'Несколько вариантов ответов' },
+  { value: 'time', label: 'Время' },
+  { value: 'date', label: 'Дата' },
+  { value: 'numbers', label: 'Числа' },
+  { value: 'text', label: 'Ввод текста' },
+  { value: 'directory', label: 'Справочник' },
+];
