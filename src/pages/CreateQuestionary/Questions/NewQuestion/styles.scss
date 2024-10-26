@@ -1,0 +1,32 @@
+@import '../../../../styles/variables.scss';
+
+.new-question {
+  border: 1px dashed #89898933;
+  border-radius: $border-radius;
+  padding: 14px;
+
+  .new-question-card {
+    border-radius: $border-radius;
+    border: 1px solid #89898933;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    cursor: pointer;
+  }
+
+  .new-question-card svg {
+    transition: all 0.3s;
+  }
+
+  .new-question-card:hover svg {
+    transform: scale(1.05);
+  }
+
+  .new-question-text {
+      max-width: 106px;
+      text-align: center;
+    }
+}

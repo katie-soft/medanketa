@@ -6,11 +6,35 @@
   padding: 18px 18px 24px 21px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 16px;
-  border-radius: 30px;
+  border-radius: $border-radius;
+  min-height: 260px;
+
+  &.inactive {
+    filter: opacity(0.5);
+  }
+
+  .question-header {
+      display: flex;
+      gap: 54px;
+      margin-bottom: 17px;
+      padding-right: 50px;
+  }
+
+  .question-number {
+    color: $inactive-color;
+  }
+  
+  .question-text {
+    padding: 14px 20px 16px;
+    background-color: $light-color;
+    border-radius: $border-radius;
+  }
+
+  .question-type span {
+    color: $inactive-color;
+  }
 }
 
-.question-number {
-  display: flex;
-  gap: 54px;
-}
+

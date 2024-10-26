@@ -3,6 +3,7 @@ import './style.scss';
 
 const CustomSelect = ({
   options,
+  selectedOption,
   placeholder,
   icon,
   chevronWidth = 14,
@@ -10,9 +11,9 @@ const CustomSelect = ({
   path = '',
   arrow = true,
   allowToggle = true,
+  onSelect,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState(null);
 
   const handleToggle = () => {
     if (allowToggle) {
@@ -21,12 +22,12 @@ const CustomSelect = ({
   };
 
   const handleOptionClick = (option) => {
-    setSelectedOption(option);
+    onSelect(option.value);
     setIsOpen(false);
   };
 
   return (
-    <div className="custom-select" style={{ borderRadius: '30px', position: 'relative' }}>
+    <div className="custom-select">
       <div className="select-box" onClick={handleToggle}>
         <span className="selected-option">
           {selectedOption ? (
@@ -36,7 +37,7 @@ const CustomSelect = ({
                   <span className="icon">{selectedOption.icon}</span>
                 </>
               )}
-              {!path && selectedOption.label}
+              {!path && selectedOption}
             </>
           ) : (
             <>

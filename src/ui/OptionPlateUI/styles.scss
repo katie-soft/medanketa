@@ -1,0 +1,12 @@
+@import '../../styles/variables.scss';
+
+.option-plate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 12px 25px 12px 15px;
+  background-color: #D4DBDF;
+  border-radius: $border-radius;
+  min-width: 430px;
+}

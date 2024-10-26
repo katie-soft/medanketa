@@ -1,0 +1,40 @@
+.edit-question.card-ui-wrapper {
+  max-width: unset;
+  margin-bottom: 47px;
+  position: relative;
+
+  .row {
+    display: flex;
+    gap: 27px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    label, p {
+      display: block;
+      margin-bottom: 12px;
+      margin-left: 21px;
+    }
+
+    .question-wrapper:first-of-type {
+      width: 30%;
+    }
+
+    .question-wrapper:nth-of-type(2) {
+      width: 70%;
+    }
+
+    .custom-select {
+      width: 100%;
+    }
+  }
+
+  .save-btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
