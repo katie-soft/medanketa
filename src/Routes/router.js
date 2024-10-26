@@ -15,11 +15,13 @@ import { Support } from '../pages/Support';
 import { Users } from '../pages/Users';
 import Questionary from '../pages/Questionary';
 import CreateQuestionary from '../pages/CreateQuestionary';
+import AnswerQuestionary from '../pages/AnswerQuestionary';
 import { Layout } from '../layouts';
 import { ControlRoles } from '../pages/ControlRole';
 import { AddRole } from '../pages/AddRole';
 import { EditUser } from '../pages/EditUser';
 import CreateDirectories from '../pages/Directories/CreateDirectories';
+import { questionary } from '../helpers/data.js';
 
 const AppRoutes = () => {
   let routes = useRoutes([
@@ -39,6 +41,7 @@ const AppRoutes = () => {
         { path: 'privacyPolicy', element: <PrivacyPolicy /> },
         { path: 'questionary', element: <Questionary /> },
         { path: 'create-questionary', element: <CreateQuestionary /> },
+        { path: 'answer-questionary', element: <AnswerQuestionary questionaryData={questionary} /> },
         { path: 'settings', element: <Settings /> },
         { path: 'support', element: <Support /> },
         { path: '/editUser', element: <EditUser /> },

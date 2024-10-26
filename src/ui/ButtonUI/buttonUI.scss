@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 $primary-color: #1c597b;
 $secondary-color: #6c757d;
 $disabled-color: #d3d3d3;
@@ -21,6 +23,11 @@ $disabled-color: #d3d3d3;
   &.secondary {
     background-color: $secondary-color;
     color: white;
+  }
+
+  &.light {
+    background-color: $light-color;
+    color: #7F7F7F;
   }
 
   &.disabled {

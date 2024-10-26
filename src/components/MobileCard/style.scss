@@ -2,7 +2,7 @@
 
 .mobile-card {
   h3 {
-    color: #999999;
+    color: $light-text-color;
     font-weight: 500;
     font-size: 1em;
     line-height: 22px;
@@ -68,7 +68,7 @@
 .mobile-card span,
 .mobile-card .mob-card-status {
   line-height: 22px;
-  color: #999999;
+  color: $light-text-color;
   font-weight: 500;
   font-size: 1em;
 }
@@ -103,7 +103,7 @@
   padding: unset;
 }
 .creator-block {
-  color: #999999;
+  color: $light-text-color;
 }
 
 .role-mob-card .title-2 {
