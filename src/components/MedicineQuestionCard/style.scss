@@ -11,6 +11,10 @@
   border-radius: $border-radius;
   min-height: 260px;
 
+  &.inactive {
+    filter: opacity(0.5);
+  }
+
   .question-header {
       display: flex;
       gap: 54px;

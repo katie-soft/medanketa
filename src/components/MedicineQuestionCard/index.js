@@ -4,9 +4,9 @@ import IconButtonUI from '../../ui/IconButtonUI/IconButtonUI';
 
 import './style.scss';
 
-const MedicineQuestionCard = ({ onClick, number, text, type, status = true }) => {
+const MedicineQuestionCard = ({ onClick, number, text, type, status = true, isInactive = false }) => {
   return (
-    <div onClick={onClick} className="question-card">
+    <div className={`question-card ${isInactive && 'inactive'}`}>
       <IconButtonUI type="close" />
       <div>
         <div className="question-header">
@@ -18,7 +18,7 @@ const MedicineQuestionCard = ({ onClick, number, text, type, status = true }) =>
       <p className="question-type">
         Тип вопросов: <span>{type}</span>
       </p>
-      <IconButtonUI type="edit" />
+      <IconButtonUI type="edit" onClick={onClick} />
     </div>
   );
 };
