@@ -10,6 +10,25 @@
 
   .card-ui-wrapper {
     max-width: unset;
+    position: relative;
+  }
+
+  .curved-block-border {
+    height: 100%;
+  }
+
+  .custom-logo-upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-left: 0;
+
+    p {
+      text-align: center;
+      margin-left: 0;
+    }
   }
 }
 

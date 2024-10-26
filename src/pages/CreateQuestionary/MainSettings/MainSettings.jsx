@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { CardUI } from '../../../ui/CardUI';
-import FileInputUI from '../../../ui/FileInputUI/FileInputUI';
 import InputUI from '../../../ui/InputUI';
+import IconButtonUI from '../../../ui/IconButtonUI/IconButtonUI';
 
 import './styles.scss';
 
@@ -12,7 +12,26 @@ const MainSettings = () => {
 
   return (
     <div className="settings-cards-wrapper">
-      <FileInputUI />
+      <CardUI classN="curved-block">
+        <IconButtonUI type="close" />
+        <div className="curved-block-border">
+          <div className="tabs-cart-block">
+            <label htmlFor="file-upload" className="custom-logo-upload">
+              <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12.248 25.5V13.75H0.498047V12.25H12.248V0.499999H13.748V12.25H25.498V13.75H13.748V25.5H12.248Z"
+                  fill="#303030"
+                />
+              </svg>
+              <p>
+                Вставить / Изменить <br />
+                Логотип
+              </p>
+            </label>
+            <input id="file-upload" type="file" style={{ display: 'none' }} />
+          </div>
+        </div>
+      </CardUI>
       <CardUI>
         <div className="card-wrapper-content">
           <InputUI

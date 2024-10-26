@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './style.scss';
+
 const CustomFileInput = ({ label, onChange, placeholder, icon: IconComponent }) => {
   const [fileName, setFileName] = useState('');
 
