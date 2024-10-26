@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './style.scss'; // SCSS styling
+import './style.scss';
 
 const CustomCheckbox = ({ label }) => {
   const [isChecked, setIsChecked] = useState(false);

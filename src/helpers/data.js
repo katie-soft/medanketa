@@ -22,6 +22,8 @@ import {
   Scale,
 } from '../pages/CreateQuestionary/Questions/AdditionalFields/index.js';
 
+import questionaryLogo from '../assets/img/qLogo.png';
+
 export const allPageData = [
   {
     name: 'Главная',
@@ -348,3 +350,137 @@ export const directories = [
     ],
   },
 ];
+
+export const questionary = {
+  title: 'Анкета для больных варикозом',
+  author: 'Васильев В.В.',
+  image: questionaryLogo,
+  questionList: [
+    {
+      id: 0,
+      questionText: 'Давайте познакомимся. Как вас зовут?',
+      questionType: 'text',
+    },
+    {
+      id: 1,
+      questionText: 'Опишите ваш рабочий день',
+      questionType: 'text',
+    },
+    {
+      id: 2,
+      questionText: 'Вы пробовали пользоваться услугами врача?',
+      questionType: 'radio',
+      options: [
+        {
+          value: 'yes',
+          name: 'Да',
+        },
+        {
+          value: 'no',
+          name: 'Нет',
+        },
+      ],
+    },
+    {
+      id: 3,
+      questionText: 'Каким препаратом вы пользовались?',
+      questionType: 'single-select',
+      options: [
+        { value: 'ib', name: 'Ибупрофен' },
+        { value: 'asp', name: 'Аспирин' },
+        { value: 'ug', name: 'Активированный уголь' },
+      ],
+    },
+    {
+      id: 4,
+      questionText: 'В какой период вы пили таблетки?',
+      questionType: 'date',
+    },
+    {
+      id: 5,
+      questionText: 'В каких городах вы бывали?',
+      questionType: 'checkbox',
+      options: [
+        { value: 'Moscow', name: 'Москва' },
+        { value: 'SPb', name: 'Санкт-Петербург' },
+        { value: 'Samara', name: 'Самара' },
+        { value: 'NNovgorod', name: 'Нижний Новгород' },
+      ],
+    },
+    {
+      id: 6,
+      questionText: 'Насколько вы довольны препаратами, которые вам выписали?',
+      questionType: 'scale',
+      options: [
+        { value: 'fgds', name: 'ФГДС' },
+        { value: 'uzi1', name: 'Узи сердца' },
+        { value: 'uzi2', name: 'Узи брюшной полости' },
+        { value: 'oak', name: 'ОАК' },
+      ],
+      answers: [
+        { value: '1', name: 'Недоволен' },
+        { value: '2', name: 'Скорее недоволен' },
+        { value: '3', name: 'Нейтрально' },
+        { value: '4', name: 'Скорее доволен' },
+        { value: '5', name: 'Доволен' },
+      ],
+      multipleChoice: true,
+    },
+    {
+      id: 7,
+      questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Ибупрофен',
+      questionType: 'number',
+      minNumber: 1,
+      maxNumber: 10,
+      decimalAllowed: true,
+    },
+    {
+      id: 8,
+      questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Аспирин',
+      questionType: 'number',
+      minNumber: 1,
+      maxNumber: 10,
+      decimalAllowed: true,
+    },
+    {
+      id: 9,
+      questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Активированный уголь',
+      questionType: 'number',
+      minNumber: 1,
+      maxNumber: 10,
+      decimalAllowed: true,
+    },
+    {
+      id: 10,
+      questionText: 'Сколько раз вы были у врача?',
+      questionType: 'number',
+      minNumber: 1,
+      maxNumber: 10000,
+      decimalAllowed: false,
+    },
+    {
+      id: 11,
+      questionText: 'Сколько вам лет?',
+      questionType: 'radio',
+      options: [
+        { value: '0-16', name: '0-16' },
+        { value: '16-32', name: '16-32' },
+        { value: '32-46', name: '32-46' },
+        { value: '46-58', name: '46-58' },
+        { value: '58-70', name: '58-70' },
+        { value: '70-100', name: '70-100' },
+      ],
+    },
+    {
+      id: 12,
+      questionText: 'Какие препараты вы принимали от головной боли?',
+      questionType: 'checkbox',
+      options: [
+        { value: '1', name: 'Препарат 1' },
+        { value: '2', name: 'Препарат 2' },
+        { value: '3', name: 'Препарат 3' },
+        { value: '4', name: 'Препарат 4' },
+      ],
+    },
+  ],
+};

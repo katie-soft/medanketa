@@ -1,7 +1,18 @@
 import React, { useState } from 'react';
 import './inputUI.scss';
 
-const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id }) => {
+const InputUI = ({
+  value,
+  onChange,
+  placeholder,
+  type = 'text',
+  classN = '',
+  id,
+  hasCopyButton = false,
+  min,
+  max,
+  step,
+}) => {
   const [visited, setVisited] = useState(false);
 
   const onChangeinp = (e) => {
@@ -27,7 +38,15 @@ const InputUI = ({ value, onChange, placeholder, type = 'text', classN = '', id 
         onChange={onChangeinp}
         placeholder={placeholder}
         className={`${classN} ${visited || value ? 'visited' : ''}`}
+        min={min}
+        max={max}
+        step={step}
       />
+      {hasCopyButton && (
+        <button className="input-copy-button" onClick={() => navigator.clipboard.writeText(value)}>
+          Скопировать
+        </button>
+      )}
       {/* {error && <span className="error-message">{error}</span>} */}
     </div>
   );

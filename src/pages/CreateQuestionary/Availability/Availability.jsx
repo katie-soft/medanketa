@@ -26,6 +26,7 @@ const Availability = () => {
             placeholder="Ссылка на анкету"
             value={link}
             onChange={(e) => setLink(e.target.value)}
+            hasCopyButton={true}
           />
         </div>
         <div className="card-wrapper-content">
@@ -37,6 +38,7 @@ const Availability = () => {
             placeholder="Пароль для доступа к анкете"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            hasCopyButton={true}
           />
           <ToggleButtonUI text="Доступ только авторизованным пользователям" isActive={true} />
         </div>

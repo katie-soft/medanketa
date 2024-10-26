@@ -47,7 +47,7 @@ tbody td {
     font-size: 16px;
     font-weight: 500;
     line-height: 19.41px;
-    color: #999999;
+    color: $light-text-color;
   }
   @media screen and (max-width: 1024px) {
     gap: 32px;
@@ -66,7 +66,7 @@ thead th {
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
-  color: #999999;
+  color: $light-text-color;
 }
 
 thead th:first-child {
@@ -139,7 +139,7 @@ table td:last-of-type {
   font-size: 16px;
   line-height: 22px;
   font-weight: 500;
-  color: #999999;
+  color: $light-text-color;
 }
 
 .row-creator-icon,
