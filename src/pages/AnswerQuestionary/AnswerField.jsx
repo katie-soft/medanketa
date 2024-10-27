@@ -1,5 +1,6 @@
 import React from 'react';
 import InputUI from '../../ui/InputUI';
+import CustomRadio from '../../ui/CustomRadioUI';
 
 const AnswerField = ({ questionData }) => {
   console.log(questionData);
@@ -20,15 +21,12 @@ const AnswerField = ({ questionData }) => {
       case 'date':
         return <InputUI isWide={false} type="date" />;
       case 'radio':
+        console.log(questionData.options);
         return (
-          <div>
-            {questionData.options.map((option) => (
-              <>
-                <input type="radio" id={option.value} name={`radio-${questionData.id}`} value={option.value} />
-                <label htmlFor={option.value}>{option.name}</label>
-              </>
-            ))}
-          </div>
+          <>
+            <CustomRadio options={questionData.options} name={`radio-${questionData.id}`} />
+            <p className="question-comment">Можно выбрать только один вариант ответа</p>
+          </>
         );
       case 'checkbox':
         return (

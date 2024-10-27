@@ -28,6 +28,60 @@ table {
       justify-content: flex-start;
     }
   }
+
+    thead th {
+      border-bottom: 1px solid $base-color;
+      border-top: 1px solid $base-color;
+      padding: 10px;
+      text-align: left;
+      padding: 12px 27px 12px 32px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: $light-text-color;
+    }
+  
+    thead th:first-child {
+      border-left: 1px solid $base-color;
+    }
+  
+    thead th:last-child {
+      border-right: 1px solid $base-color;
+    }
+  
+    table td {
+      width: calc(100% / 4);
+      padding: 12px 32px;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      color: $text-color;
+    }
+  
+    table td:first-of-type,
+    thead th:first-of-type {
+      border-top-left-radius: 30px;
+      border-bottom-left-radius: 30px;
+      max-width: 0;
+    }
+
+        table td:last-of-type {
+          padding: unset;
+          box-sizing: border-box;
+          padding-left: 26px;
+        }
+    
+        thead th:last-of-type {
+          border-top-right-radius: 30px;
+          border-bottom-right-radius: 30px;
+        }
+    
+        table td:last-of-type {
+          display: flex;
+          background-color: white;
+          gap: 24px;
+          width: 100%;
+        }
 }
 
   .table-wrapper.wrapper {
@@ -70,41 +124,7 @@ table {
     background-color: $base-color;
   }
 
-  thead th {
-    border-bottom: 1px solid $base-color;
-    border-top: 1px solid $base-color;
-    padding: 10px;
-    text-align: left;
-    padding: 12px 27px 12px 32px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: $light-text-color;
-  }
-
-  thead th:first-child {
-    border-left: 1px solid $base-color;
-  }
-
-  thead th:last-child {
-    border-right: 1px solid $base-color;
-  }
-
-  table td {
-    width: calc(100% / 4);
-    padding: 12px 32px;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: $text-color;
-  }
-
-  table td:first-of-type,
-  thead th:first-of-type {
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    max-width: 0;
-  }
+  
 
   .penultimate {
     border-top-right-radius: 30px;
@@ -118,24 +138,6 @@ table {
     //  @media screen and (max-width:1356px) {
     max-width: 150px;
     //  }
-  }
-
-  table td:last-of-type {
-    padding: unset;
-    box-sizing: border-box;
-    padding-left: 26px;
-  }
-
-  thead th:last-of-type {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-  }
-
-  table td:last-of-type {
-    display: flex;
-    background-color: white;
-    gap: 24px;
-    width: 100%;
   }
 
   .icon-wrapper.edit-button {
