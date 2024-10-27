@@ -373,11 +373,11 @@ export const questionary = {
       options: [
         {
           value: 'yes',
-          name: 'Да',
+          title: 'Да',
         },
         {
           value: 'no',
-          name: 'Нет',
+          title: 'Нет',
         },
       ],
     },

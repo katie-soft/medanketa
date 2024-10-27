@@ -128,11 +128,17 @@
         display: block;
         margin-bottom: 15px;
       }
+
+      .question-comment {
+        color: $light-text-color;
+        margin-top: 13px;
+      }
     }
 
     .questionary-content-footer {
       display: flex;
       justify-content: space-between;
+      align-items: flex-start;
 
       .checkbox-container {
         border: 1px solid #E4E4E4;
