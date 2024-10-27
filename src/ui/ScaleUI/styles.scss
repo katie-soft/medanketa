@@ -1,0 +1,45 @@
+@import '../../styles/variables.scss';
+
+.scale {
+  font-weight: 500;
+  border-collapse: separate;
+  border-spacing: 0 15px;
+
+  /*стили для шапки таблицы*/
+  thead tr td {
+    border-top: 1px solid #E9E9E9;
+    border-bottom: 1px solid #E9E9E9;
+    padding: 15px 20px;
+    color: $light-text-color;
+
+    &:first-of-type {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+
+  /*стили для body таблицы*/
+  tbody tr td {
+    background-color: $light-color;
+    padding: 5px 20px;
+
+    &:first-of-type {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-of-type {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    &:not(:first-of-type) {
+      text-align: center;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import InputUI from '../../ui/InputUI';
 import CustomRadio from '../../ui/CustomRadioUI';
 import CustomCheckbox from '../../ui/CustomCheckbox';
 import CustomSelect from '../../ui/CustomSelectUI';
+import Scale from '../../ui/ScaleUI/ScaleUI';
 
 const AnswerField = ({ questionData }) => {
   const renderField = () => {
@@ -50,28 +51,10 @@ const AnswerField = ({ questionData }) => {
         );
       case 'scale':
         return (
-          <table>
-            <thead>
-              <tr>
-                <td>Название</td>
-                {questionData.answers.map((answer) => (
-                  <td key={answer.value}>{answer.name}</td>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {questionData.options.map((option) => (
-                <tr key={option.value}>
-                  <td>{option.name}</td>
-                  {questionData.answers.map((answer) => (
-                    <td key={answer.value}>
-                      <input type="checkbox" />
-                    </td>
-                  ))}
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <>
+            <Scale answers={questionData.answers} options={questionData.options} />
+            <p className="question-comment">Можно выбрать несколько вариантов ответа</p>
+          </>
         );
     }
   };
