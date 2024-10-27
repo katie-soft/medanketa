@@ -30,19 +30,22 @@ const AnswerQuestionaryContent = ({ questionaryData }) => {
         <AnswerField questionData={questionaryData.questionList[currentQuestionIndex]} />
       </div>
       <div className="questionary-content-footer">
-        {currentQuestionIndex === 0 ? (
-          <CustomCheckbox label="Даю согласие на обработку персональных данных" />
-        ) : (
-          <ButtonUI
-            text="Назад"
-            type="light"
-            icon={BackIcon}
-            onClick={() => setCurrentQuestionIndex(currentQuestionIndex - 1)}
-          />
-        )}
-        <p className="footer-text">
-          Все ваши ответы и результаты анкетирования конфиденцальны. Результыт доступны будут вам и автору анкеты.
-        </p>
+        <div className="prev-button-wrapper">
+          {currentQuestionIndex === 0 ? (
+            <CustomCheckbox label="Даю согласие на обработку персональных данных" />
+          ) : (
+            <ButtonUI
+              text="Назад"
+              type="light"
+              icon={BackIcon}
+              onClick={() => setCurrentQuestionIndex(currentQuestionIndex - 1)}
+            />
+          )}
+          <p className="footer-text">
+            Все ваши ответы и результаты анкетирования конфиденцальны. Результыт доступны будут вам и автору анкеты.
+          </p>
+        </div>
+
         {currentQuestionIndex < totalQuestionsNumber - 1 ? (
           <ButtonUI text="Далее" icon={NextIcon} onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)} />
         ) : (
