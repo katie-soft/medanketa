@@ -386,9 +386,9 @@ export const questionary = {
       questionText: 'Каким препаратом вы пользовались?',
       questionType: 'single-select',
       options: [
-        { value: 'ib', name: 'Ибупрофен' },
-        { value: 'asp', name: 'Аспирин' },
-        { value: 'ug', name: 'Активированный уголь' },
+        { value: 'ib', label: 'Ибупрофен' },
+        { value: 'asp', label: 'Аспирин' },
+        { value: 'ug', label: 'Активированный уголь' },
       ],
     },
     {
@@ -468,12 +468,12 @@ export const questionary = {
       questionText: 'Сколько вам лет?',
       questionType: 'radio',
       options: [
-        { value: '0-16', name: '0-16' },
-        { value: '16-32', name: '16-32' },
-        { value: '32-46', name: '32-46' },
-        { value: '46-58', name: '46-58' },
-        { value: '58-70', name: '58-70' },
-        { value: '70-100', name: '70-100' },
+        { value: '0-16', title: '0-16' },
+        { value: '16-32', title: '16-32' },
+        { value: '32-46', title: '32-46' },
+        { value: '46-58', title: '46-58' },
+        { value: '58-70', title: '58-70' },
+        { value: '70-100', title: '70-100' },
       ],
     },
     {

@@ -3,6 +3,7 @@ import CustomCheckbox from '../../ui/CustomCheckbox';
 import ButtonUI from '../../ui/ButtonUI';
 import { ReactComponent as NextIcon } from '../../assets/svg/arrowNext.svg';
 import { ReactComponent as BackIcon } from '../../assets/svg/arrowBack.svg';
+import { ReactComponent as CloseIcon } from '../../assets/svg/close.svg';
 import AnswerField from './AnswerField';
 
 import './style.scss';
@@ -25,7 +26,7 @@ const AnswerQuestionaryContent = ({ questionaryData }) => {
         <span className="progress">{progress}% пройдено</span>
       </div>
       <div className="questionary-content-text">
-        <span>{questionaryData.questionList[currentQuestionIndex].questionText}</span>
+        <span className="question-text">{questionaryData.questionList[currentQuestionIndex].questionText}</span>
         <AnswerField questionData={questionaryData.questionList[currentQuestionIndex]} />
       </div>
       <div className="questionary-content-footer">
@@ -42,8 +43,10 @@ const AnswerQuestionaryContent = ({ questionaryData }) => {
         <p className="footer-text">
           Все ваши ответы и результаты анкетирования конфиденцальны. Результыт доступны будут вам и автору анкеты.
         </p>
-        {currentQuestionIndex < totalQuestionsNumber - 1 && (
+        {currentQuestionIndex < totalQuestionsNumber - 1 ? (
           <ButtonUI text="Далее" icon={NextIcon} onClick={() => setCurrentQuestionIndex(currentQuestionIndex + 1)} />
+        ) : (
+          <ButtonUI text="Закончить" icon={CloseIcon} type="transparent" />
         )}
       </div>
     </div>

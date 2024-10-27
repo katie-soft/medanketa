@@ -124,14 +124,21 @@
     .questionary-content-text {
       margin-bottom: 50px;
 
-      span {
+      .question-text {
         display: block;
         margin-bottom: 15px;
+        margin-left: 26px;
       }
 
       .question-comment {
         color: $light-text-color;
         margin-top: 13px;
+        margin-left: 26px;
+      }
+
+      .checkbox-container {
+        background-color: $light-color;
+        margin-right: 13px;
       }
     }
 
