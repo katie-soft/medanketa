@@ -393,11 +393,16 @@ export const questionary = {
     },
     {
       id: 4,
-      questionText: 'В какой период вы пили таблетки?',
+      questionText: 'Когда вы начали пить таблетки? ',
       questionType: 'date',
     },
     {
       id: 5,
+      questionText: 'Когда вы закончили пить таблетки? ',
+      questionType: 'date',
+    },
+    {
+      id: 6,
       questionText: 'В каких городах вы бывали?',
       questionType: 'checkbox',
       options: [
@@ -408,7 +413,7 @@ export const questionary = {
       ],
     },
     {
-      id: 6,
+      id: 7,
       questionText: 'Насколько вы довольны препаратами, которые вам выписали?',
       questionType: 'scale',
       options: [
@@ -427,7 +432,7 @@ export const questionary = {
       multipleChoice: true,
     },
     {
-      id: 7,
+      id: 8,
       questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Ибупрофен',
       questionType: 'number',
       minNumber: 1,
@@ -435,7 +440,7 @@ export const questionary = {
       decimalAllowed: true,
     },
     {
-      id: 8,
+      id: 9,
       questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Аспирин',
       questionType: 'number',
       minNumber: 1,
@@ -443,7 +448,7 @@ export const questionary = {
       decimalAllowed: true,
     },
     {
-      id: 9,
+      id: 10,
       questionText: 'Оцените представленные препараты, по шкале от 1 до 10, где 10 это отлично. Активированный уголь',
       questionType: 'number',
       minNumber: 1,
@@ -451,7 +456,7 @@ export const questionary = {
       decimalAllowed: true,
     },
     {
-      id: 10,
+      id: 11,
       questionText: 'Сколько раз вы были у врача?',
       questionType: 'number',
       minNumber: 1,
@@ -459,7 +464,7 @@ export const questionary = {
       decimalAllowed: false,
     },
     {
-      id: 11,
+      id: 12,
       questionText: 'Сколько вам лет?',
       questionType: 'radio',
       options: [
@@ -472,7 +477,7 @@ export const questionary = {
       ],
     },
     {
-      id: 12,
+      id: 13,
       questionText: 'Какие препараты вы принимали от головной боли?',
       questionType: 'checkbox',
       options: [

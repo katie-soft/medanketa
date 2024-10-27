@@ -17,12 +17,12 @@ $disabled-color: #d3d3d3;
 
   &.primary {
     background-color: $primary-color;
-    color: white;
+    color: $light-color;
   }
 
   &.secondary {
     background-color: $secondary-color;
-    color: white;
+    color: $light-color;
   }
 
   &.light {

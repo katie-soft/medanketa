@@ -24,6 +24,11 @@ $error-color: #dc3545;
     .visited {
       border: 1px solid $border-color;
     }
+
+    &.auto-width {
+      width: auto;
+    }
+
     &::placeholder {
       color: #c4c6c7;
     }

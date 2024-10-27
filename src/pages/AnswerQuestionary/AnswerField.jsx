@@ -11,13 +11,14 @@ const AnswerField = ({ questionData }) => {
         return (
           <InputUI
             type="number"
+            isWide={false}
             min={questionData.minNumber}
             max={questionData.maxNumber}
             step={questionData.decimalAllowed ? 1 : 0.01}
           />
         );
       case 'date':
-        return <InputUI type="date" />;
+        return <InputUI isWide={false} type="date" />;
       case 'radio':
         return (
           <div>
@@ -53,12 +54,14 @@ const AnswerField = ({ questionData }) => {
       case 'scale':
         return (
           <table>
-            <th>
-              <td></td>
-              {questionData.answers.map((answer) => (
-                <td key={answer.value}>{answer.name}</td>
-              ))}
-            </th>
+            <thead>
+              <tr>
+                <td>Название</td>
+                {questionData.answers.map((answer) => (
+                  <td key={answer.value}>{answer.name}</td>
+                ))}
+              </tr>
+            </thead>
             <tbody>
               {questionData.options.map((option) => (
                 <tr key={option.value}>
