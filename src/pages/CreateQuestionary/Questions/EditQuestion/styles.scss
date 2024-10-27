@@ -30,11 +30,23 @@
     .custom-select {
       width: 100%;
     }
+
+    @media screen and (max-width: 1270px) {
+      flex-direction: column;
+
+      .question-wrapper {
+        width: auto !important;
+      }
+    }
   }
 
   .save-btn {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media screen and (max-width: 1030px) {
+      position: relative;
+    }
   }
 }

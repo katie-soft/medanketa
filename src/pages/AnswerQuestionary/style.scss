@@ -18,8 +18,17 @@
     align-items: flex-start;
     margin-bottom: 35px;
 
+    @media screen and (max-width: 1400px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+
     .registration-alert-content {
       max-width: 50%;
+
+      @media screen and (max-width: 1400px) {
+        max-width: none;
+      }
     }
 
     .registration-alert-title {
@@ -44,6 +53,7 @@
       color: $light-color;
       border-radius: $border-radius;
       padding: 15px 20px;
+      text-align: center;
     }
   }
 
@@ -53,11 +63,21 @@
     border-radius: $border-radius;
     padding: 24px 40px 40px 24px;
 
+    @media screen and (max-width: 700px) {
+      padding: 12px;
+    }
+
     .questionary-header {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 30px;
+
+      @media screen and (max-width: 540px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+      }
 
       .questionary-header-content {
         display: flex;
@@ -95,10 +115,20 @@
       border-radius: $border-radius;
       padding: 24px 32px;
 
+      @media screen and (max-width: 700px) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+
       .questionary-content-header {
         display: flex;
         justify-content: space-between;
         margin-bottom: 36px;
+
+        @media screen and (max-width: 540px) {
+          flex-direction: column;
+          gap: 12px;
+        }
       }
 
       .question-number {
@@ -139,6 +169,7 @@
       .checkbox-container {
         background-color: $light-color;
         margin-right: 13px;
+        margin-bottom: 13px;
       }
     }
 
@@ -147,6 +178,12 @@
       justify-content: space-between;
       align-items: flex-start;
 
+      @media screen and (max-width: 1540px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 18px;
+      }
+
       .checkbox-container {
         border: 1px solid #E4E4E4;
       }
@@ -154,10 +191,25 @@
         color: $light-text-color;
       }
 
+      .prev-button-wrapper {
+        display: flex;
+        gap: 48px;
+
+        @media screen and (max-width: 1540px) {
+          flex-direction: column;
+          gap: 18px;
+          align-items: center;
+        }
+      }
+
       .footer-text {
         color: $light-text-color;
         font-weight: 500;
-        max-width: 40%;
+        max-width: 50%;
+
+        @media screen and (max-width: 1540px) {
+          max-width: none;
+        }
       }
 
       .button {
