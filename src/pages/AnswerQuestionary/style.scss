@@ -63,6 +63,10 @@
     border-radius: $border-radius;
     padding: 24px 40px 40px 24px;
 
+    @media screen and (max-width: 700px) {
+      padding: 12px;
+    }
+
     .questionary-header {
       display: flex;
       justify-content: space-between;
@@ -110,6 +114,11 @@
       background-color: $base-color;
       border-radius: $border-radius;
       padding: 24px 32px;
+
+      @media screen and (max-width: 700px) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
 
       .questionary-content-header {
         display: flex;

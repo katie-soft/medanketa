@@ -5,6 +5,10 @@
   border-collapse: separate;
   border-spacing: 0 15px;
 
+  @media screen and (max-width: 1220px) {
+    display: none;
+  }
+
   /*стили для шапки таблицы*/
   thead tr td {
     border-top: 1px solid #E9E9E9;
@@ -42,4 +46,49 @@
       text-align: center;
     }
   }
+}
+
+/* стили для мобильной версии*/
+.mobile-scale-wrapper {
+  background-color: $light-color;
+  border-radius: $border-radius;
+  padding: 22px 12px;
+  margin-bottom: 27px;
+
+  @media screen and (min-width: 1219px) {
+    display: none;
+  }
+
+  .mobile-scale-title {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: $text-color;
+    margin: 0 auto 20px auto;
+    display: block;
+  }
+
+  .mobile-scale {
+    background-color: $light-color;
+    margin: 0 auto;
+
+    thead tr td {
+      font-size: 12px;
+      color: #999999;
+      text-align: center;
+      vertical-align: top;
+      max-width: 80px;
+    }
+
+    tbody tr td {
+      text-align: center;
+    }
+
+    .checkbox-container {
+      margin: 0 !important;
+      padding: 0;
+    }
+  }
+
+
 }
