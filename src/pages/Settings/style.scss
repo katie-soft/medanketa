@@ -288,14 +288,15 @@
 .mail-notification-details + .explanation-text-block {
   display: none;
 }
+
 .explanation-text-block {
   position: relative;
   display: flex;
   gap: 64px;
   align-items: flex-start;
-  @media screen and (max-width: 660px) {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: unset;
+
+  @media screen and (max-width: 1050px) {
+    flex-direction: column-reverse;
+    align-items: center;
   }
 }

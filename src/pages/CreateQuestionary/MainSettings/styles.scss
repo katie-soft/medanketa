@@ -4,9 +4,17 @@
   gap: 42px;
   margin-bottom: 50px;
 
+  @media screen and (max-width: 1170px) {
+    flex-direction: column;
+  }
+
   > div:first-of-type {
     width: 60%;
+
+    @media screen and (max-width: 1170px) {
+      width: auto;
   }
+}
 
   .card-ui-wrapper {
     max-width: unset;
@@ -35,3 +43,4 @@
 textarea::placeholder {
   color: #c3c3c3;
 }
+

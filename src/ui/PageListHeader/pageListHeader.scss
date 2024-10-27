@@ -33,10 +33,11 @@
   border-radius: 50px;
   align-self: center;
   height: 49px;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 400px) {
     flex-direction: column;
     padding-left: unset;
     gap: 15px;
+    height: unset;
   }
 }
 .title-wrapper h1 {

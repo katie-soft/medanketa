@@ -3,6 +3,10 @@
   gap: 30px;
   margin-bottom: 43px;
 
+  @media screen and (max-width: 1450px) {
+    flex-direction: column;
+  }
+
   .card-ui-wrapper {
     max-width: unset;
     text-align: start;

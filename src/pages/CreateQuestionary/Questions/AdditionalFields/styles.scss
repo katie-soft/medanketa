@@ -18,6 +18,10 @@
   display: flex;
   gap: 27px;
 
+  @media screen and (max-width: 1540px) {
+    flex-direction: column;
+  }
+
   .row {
     display: flex;
     align-items: center;
