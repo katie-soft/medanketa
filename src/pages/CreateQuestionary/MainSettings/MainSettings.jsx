@@ -13,8 +13,8 @@ const MainSettings = () => {
   return (
     <div className="settings-cards-wrapper">
       <CardUI classN="curved-block">
-        <IconButtonUI type="close" />
         <div className="curved-block-border">
+          <IconButtonUI type="close" />
           <div className="tabs-cart-block">
             <label htmlFor="file-upload" className="custom-logo-upload">
               <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,10 +23,7 @@ const MainSettings = () => {
                   fill="#303030"
                 />
               </svg>
-              <p>
-                Вставить / Изменить <br />
-                Логотип
-              </p>
+              <p>Загрузить</p>
             </label>
             <input id="file-upload" type="file" style={{ display: 'none' }} />
           </div>

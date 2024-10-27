@@ -3,7 +3,7 @@
 .question-card {
   position: relative;
   background-color: $base-color;
-  padding: 18px 18px 24px 21px;
+  padding: 24px 24px 32px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -34,6 +34,10 @@
 
   .question-type span {
     color: $inactive-color;
+  }
+
+  .toggle-button-ui {
+    justify-content: flex-start;
   }
 }
 

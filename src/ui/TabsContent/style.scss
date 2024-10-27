@@ -114,32 +114,37 @@
 }
 .maintance-mod-activation.rounded-wrapper {
   justify-content: space-between;
-  width: 33%;
+  width: 50%;
   padding: 12px 23px 12px 31px;
   border-color: $base-color;
+
+  .toggle-button-ui {
+    width: 130px;
+    justify-content: flex-start;
+  }
+
   @media screen and (max-width: 1024px) {
     width: 100%;
   }
+
   @media screen and (max-width: 1356px) {
     flex-wrap: wrap;
     justify-content: center;
   }
+
   h2 {
     font-weight: 500;
     font-size: 18px;
     line-height: 21.83px;
     color: $text-color;
+
     @media screen and (max-width: 1024px) {
       font-size: 1rem;
       line-height: 19.41px;
     }
   }
-  // @media screen and (max-width:1024px) {
-  //      max-width: 400px;
-  // width: 100%;
-  // margin: auto;
-  // }
 }
+
 .save-btn {
   display: inline;
   list-style: none;

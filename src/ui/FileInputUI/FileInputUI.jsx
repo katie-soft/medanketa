@@ -6,7 +6,7 @@ const FileInputUI = () => {
   return (
     <div className="file-input-wrapper">
       <IconButtonUI type="close" />
-      <label htmlFor="file">Вставить / Изменить Логотип</label>
+      <label htmlFor="file">Загрузить</label>
       <input className="file-input" type="file" name="file" id="file" />
     </div>
   );
