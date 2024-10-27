@@ -28,9 +28,10 @@ table {
       justify-content: flex-start;
     }
   }
+}
 
   .table-wrapper.wrapper {
-    width: -webkit-fill-available;
+    width: 100%;
     padding: 32px;
 
     @media screen and (max-width: 1200px) {
@@ -205,5 +206,5 @@ table {
       border-bottom-right-radius: 30px;
     }
   }
-}
+
 
