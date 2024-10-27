@@ -7,6 +7,7 @@ const InputUI = ({
   placeholder,
   type = 'text',
   classN = '',
+  isWide = true,
   id,
   hasCopyButton = false,
   min,
@@ -37,7 +38,7 @@ const InputUI = ({
         value={value}
         onChange={onChangeinp}
         placeholder={placeholder}
-        className={`${classN} ${visited || value ? 'visited' : ''}`}
+        className={`${classN} ${visited || value ? 'visited' : ''} ${!isWide && 'auto-width'}`}
         min={min}
         max={max}
         step={step}
