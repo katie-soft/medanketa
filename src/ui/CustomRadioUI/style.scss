@@ -2,7 +2,7 @@
 
 .radio-container {
   background-color: $light-color;
-  padding: 14px 26px 14px 14px;
+  padding: 14px 26px;
   border-radius: $border-radius;
   display: inline-flex;
   align-items: center;
@@ -22,7 +22,6 @@
     height: 12px;
     border: 1px solid $accent-color;
     border-radius: 2px;
-    margin-bottom: 0 !important;
     transition:
       background-color 0.3s,
       border-color 0.3s;
@@ -41,5 +40,6 @@
     display: inline-flex;
     align-items: center;
     gap: 14px;
+    cursor: pointer;
   }
 }

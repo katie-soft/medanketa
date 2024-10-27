@@ -1,9 +1,10 @@
 import React from 'react';
 import InputUI from '../../ui/InputUI';
 import CustomRadio from '../../ui/CustomRadioUI';
+import CustomCheckbox from '../../ui/CustomCheckbox';
+import CustomSelect from '../../ui/CustomSelectUI';
 
 const AnswerField = ({ questionData }) => {
-  console.log(questionData);
   const renderField = () => {
     switch (questionData.questionType) {
       case 'text':
@@ -16,12 +17,12 @@ const AnswerField = ({ questionData }) => {
             min={questionData.minNumber}
             max={questionData.maxNumber}
             step={questionData.decimalAllowed ? 1 : 0.01}
+            placeholder={questionData.minNumber}
           />
         );
       case 'date':
         return <InputUI isWide={false} type="date" />;
       case 'radio':
-        console.log(questionData.options);
         return (
           <>
             <CustomRadio options={questionData.options} name={`radio-${questionData.id}`} />
@@ -32,22 +33,20 @@ const AnswerField = ({ questionData }) => {
         return (
           <div>
             {questionData.options.map((option) => (
-              <>
-                <input type="checkbox" id={option.value} name={`radio-${questionData.id}`} value={option.value} />
-                <label htmlFor={option.value}>{option.name}</label>
-              </>
+              <CustomCheckbox label={option.name} value={option.value} key={option.value} />
             ))}
+            <p className="question-comment">Можно выбрать несколько вариантов ответа</p>
           </div>
         );
       case 'single-select':
+        console.log(questionData.options);
         return (
-          <select id={`select-${questionData.id}`}>
-            {questionData.options.map((option) => (
-              <option value={option.value} key={option.value}>
-                {option.name}
-              </option>
-            ))}
-          </select>
+          <CustomSelect
+            options={questionData.options}
+            selectedOption={questionData.options[0].label}
+            placeholder="Выберите ответ"
+            onSelect={() => console.log('Ответ выбран')}
+          />
         );
       case 'scale':
         return (
