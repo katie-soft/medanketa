@@ -4,8 +4,6 @@
   display: flex;
   gap: 57px;
   flex-wrap: wrap;
-  border: 1px solid #e4e4e4;
-  border-radius: 2rem;
 
   @media screen and (max-width: 550px) {
     gap: unset;
